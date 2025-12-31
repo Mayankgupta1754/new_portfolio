@@ -232,7 +232,7 @@ const Achievements = ({ setActiveSection }) => {
                   onClick={toggleLike}
                   variant="ghost"
                   size="sm"
-                  className={`text-gray-400 hover:text-white ${likedAchievements.has(currentAchievement) ? 'text-red-500' : ''}`}
+                  className={`text-gray-400 hover:text-white md:block hidden ${likedAchievements.has(currentAchievement) ? 'text-red-500' : ''}`}
                 >
                   <Heart size={24} className={likedAchievements.has(currentAchievement) ? 'fill-current' : ''} />
                 </Button>
@@ -244,7 +244,7 @@ const Achievements = ({ setActiveSection }) => {
           <div className="mt-8 pt-8 border-t border-gray-700">
             <h3 className="text-xl font-bold text-white mb-4">Description</h3>
             <div className="max-h-60 overflow-y-auto">
-              <div className="px-4 py-3 rounded-lg bg-green-50 text-gray-800 leading-relaxed">
+              <div className="px-4 py-3 rounded-lg bg-green-500 text-black-800 leading-relaxed">
                 {currentAchievementData.description}
               </div>
             </div>

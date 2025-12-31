@@ -8,6 +8,9 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import KnowledgeSharing from "./components/KnowledgeSharing";
+import Achievements from "./components/Achievements";
+import Personality from "./components/Personality";
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -21,6 +24,12 @@ function App() {
         return <About setActiveSection={setActiveSection} />;
       case 'projects':
         return <Projects setActiveSection={setActiveSection} />;
+      case 'knowledge-sharing':
+        return <KnowledgeSharing setActiveSection={setActiveSection} />;
+      case 'personality':
+        return <Personality setActiveSection={setActiveSection} />;
+      case 'achievements':
+        return <Achievements setActiveSection={setActiveSection} />;
       case 'skills':
         return <Skills setActiveSection={setActiveSection} />;
       case 'experience':

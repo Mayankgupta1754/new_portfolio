@@ -60,25 +60,76 @@ const Home = ({ setActiveSection }) => {
 
   const featuredSections = [
     {
-      id: 'projects',
-      title: 'Featured Projects',
-      subtitle: 'Showcase of ML & AI work',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop',
-      gradient: 'from-purple-600 to-blue-600'
+      id: 'knowledge-sharing',
+      title: 'Knowledge Sharing',
+      subtitle: 'Tutorials, Guides & Resources',
+      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop',
+      gradient: 'from-yellow-600 to-orange-600'
     },
     {
-      id: 'skills',
-      title: 'Technical Skills',
-      subtitle: 'Data Science & Machine Learning',
-      image: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=250&fit=crop',
-      gradient: 'from-green-600 to-teal-600'
+      id: 'achievements',
+      title: 'Achievements',
+      subtitle: 'Accomplishments & Milestones',
+      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=250&fit=crop',
+      gradient: 'from-blue-600 to-purple-600'
     },
     {
-      id: 'experience',
-      title: 'Work Experience',
-      subtitle: 'Professional achievements',
-      image: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=400&h=250&fit=crop',
-      gradient: 'from-orange-600 to-red-600'
+      id: 'personality',
+      title: 'Personality',
+      subtitle: 'Hobbies & Interests',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop',
+      gradient: 'from-pink-600 to-rose-600'
+    }
+  ];
+
+  const portalLinks = [
+    {
+      id: 'leetcode',
+      title: 'LeetCode',
+      description: 'Problem Solving & Algorithms',
+      url: 'https://leetcode.com/Mayankgupta1754',
+      icon: '💡',
+      color: 'from-orange-500 to-red-600'
+    },
+    {
+      id: 'kaggle',
+      title: 'Kaggle',
+      description: 'Data Science & ML Competitions',
+      url: 'https://kaggle.com/mayankgupta1754',
+      icon: '📊',
+      color: 'from-blue-500 to-cyan-600'
+    },
+    {
+      id: 'github',
+      title: 'GitHub',
+      description: 'Open Source Projects',
+      url: 'https://github.com/Mayankgupta1754',
+      icon: '🐙',
+      color: 'from-gray-600 to-gray-800'
+    },
+    {
+      id: 'linkedin',
+      title: 'LinkedIn',
+      description: 'Professional Network',
+      url: 'https://www.linkedin.com/in/mayank-gupta-218636253/',
+      icon: '💼',
+      color: 'from-blue-600 to-blue-800'
+    },
+    {
+      id: 'hackerrank',
+      title: 'HackerRank',
+      description: 'Coding Challenges',
+      url: 'https://hackerrank.com/mayankgupta1754',
+      icon: '🎯',
+      color: 'from-green-500 to-emerald-600'
+    },
+    {
+      id: 'medium',
+      title: 'Medium',
+      description: 'Technical Writing',
+      url: 'https://medium.com/@mayankgupta1754',
+      icon: '✍️',
+      color: 'from-black to-gray-700'
     }
   ];
 
@@ -151,26 +202,24 @@ const Home = ({ setActiveSection }) => {
         </div>
       </div>
 
-      {/* All Sections - Compact List */}
+      {/* Portal Links - External Platforms */}
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-white mb-4">Explore More</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {quickAccessCards.map((card) => (
+          {portalLinks.map((portal) => (
             <Card
-              key={`explore-${card.id}`}
-              onClick={() => setActiveSection(card.id)}
+              key={`portal-${portal.id}`}
+              onClick={() => window.open(portal.url, '_blank')}
               className="bg-spotify-card hover:bg-spotify-card-hover border-none p-4 cursor-pointer transition-all duration-300 group"
             >
-              <div className="relative mb-4 aspect-square rounded overflow-hidden bg-gradient-to-br shadow-lg">
-                <div className={`absolute inset-0 bg-gradient-to-br ${card.color}`}></div>
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  className="w-full h-full object-cover mix-blend-overlay opacity-60"
-                />
+              <div className="relative mb-4 aspect-square rounded overflow-hidden bg-gradient-to-br shadow-lg flex items-center justify-center">
+                <div className={`absolute inset-0 bg-gradient-to-br ${portal.color}`}></div>
+                <div className="relative z-10 text-4xl">
+                  {portal.icon}
+                </div>
               </div>
-              <h3 className="text-white font-bold text-sm mb-1 truncate">{card.title}</h3>
-              <p className="text-gray-400 text-xs line-clamp-2">{card.description}</p>
+              <h3 className="text-white font-bold text-sm mb-1 truncate">{portal.title}</h3>
+              <p className="text-gray-400 text-xs line-clamp-2">{portal.description}</p>
             </Card>
           ))}
         </div>

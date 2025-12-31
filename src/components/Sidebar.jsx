@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, FolderOpen, Award, Briefcase, GraduationCap, Mail, Download, Github, Linkedin, Menu, X } from 'lucide-react';
+import { Home, FolderOpen, Award, Briefcase, GraduationCap, Mail, Download, Github, Linkedin, Menu, X, BookOpen, Heart, Trophy } from 'lucide-react';
 import { profileData } from '../data/mock';
 import { Button } from './ui/button';
 
@@ -8,6 +8,9 @@ const Sidebar = ({ activeSection, setActiveSection, isMobileMenuOpen, setIsMobil
     { id: 'home', label: 'Home', icon: Home },
     { id: 'about', label: 'About Me', icon: Home },
     { id: 'projects', label: 'Projects', icon: FolderOpen },
+    { id: 'knowledge-sharing', label: 'Knowledge Sharing', icon: BookOpen },
+    { id: 'personality', label: 'Personality', icon: Heart },
+    { id: 'achievements', label: 'Achievements', icon: Trophy },
     { id: 'skills', label: 'Skills', icon: Award },
     { id: 'experience', label: 'Experience', icon: Briefcase },
     { id: 'education', label: 'Education', icon: GraduationCap },

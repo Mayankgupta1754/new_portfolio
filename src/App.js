@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
@@ -15,6 +15,33 @@ import Personality from "./components/Personality";
 function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [sectionHistory, setSectionHistory] = useState(['home']);
+
+  // Handle browser back button
+  useEffect(() => {
+    const handlePopState = (event) => {
+      if (sectionHistory.length > 1) {
+        const newHistory = [...sectionHistory];
+        newHistory.pop(); // Remove current section
+        const previousSection = newHistory[newHistory.length - 1];
+        setSectionHistory(newHistory);
+        setActiveSection(previousSection);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [sectionHistory]);
+
+  // Custom setActiveSection that manages history
+  const handleSetActiveSection = (section) => {
+    if (section !== activeSection) {
+      setSectionHistory(prev => [...prev, section]);
+      setActiveSection(section);
+      // Push state to browser history
+      window.history.pushState({ section }, '', `#${section}`);
+    }
+  };
 
   const renderSection = () => {
     switch (activeSection) {
@@ -47,7 +74,7 @@ function App() {
     <div className="App bg-spotify-dark min-h-screen">
       <Sidebar
         activeSection={activeSection}
-        setActiveSection={setActiveSection}
+        setActiveSection={handleSetActiveSection}
         isMobileMenuOpen={isMobileMenuOpen}
         setIsMobileMenuOpen={setIsMobileMenuOpen}
       />

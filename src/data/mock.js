@@ -208,340 +208,53 @@ export const knowledgeSharingData = [
     artist: 'LeetCode',
     album: 'DSA Problem Solutions',
     duration: '12 min read',
-    description: 'A comprehensive solution to the classic LeetCode Hard problem of finding the maximum path sum in a binary tree. Includes multiple approaches, time/space complexity analysis, and edge case handling.',
-    problemStatement: 'Given a binary tree, find the maximum path sum. The path may start and end at any node in the tree.',
-    solutions: [
-      {
-        approach: 'DFS with Recursion',
-        timeComplexity: 'O(n)',
-        spaceComplexity: 'O(h)',
-        code: `def maxPathSum(self, root: TreeNode) -> int:
-    def dfs(node):
-        if not node:
-            return 0
-        left = max(0, dfs(node.left))
-        right = max(0, dfs(node.right))
-        self.max_sum = max(self.max_sum, left + right + node.val)
-        return max(left, right) + node.val
-    
-    if not root:
-        return 0
-    self.max_sum = float('-inf')
-    dfs(root)
-    return self.max_sum`
-      }
-    ],
-    technologies: ['Python', 'Tree Traversal', 'Dynamic Programming', 'Recursion'],
     category: 'DSA',
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=400&fit=crop',
-    link: 'https://leetcode.com/problems/binary-tree-maximum-path-sum/',
-    github: 'https://github.com/Mayankgupta1754/dsa-solutions/tree/main/binary-tree-max-path',
-    sharedDate: '2024',
-    difficulty: 'Hard',
-    contentType: 'Problem Solution',
-    keyTakeaways: [
-      'Mastered tree DP techniques for path sum problems',
-      'Learned to handle negative node values in path calculations',
-      'Implemented efficient O(n) time complexity solution'
-    ]
+    link: 'https://leetcode.com/problems/binary-tree-maximum-path-sum/'
   },
   {
     id: 2,
-    type: 'ethical_hacking',
-    title: 'Advanced XSS Attack Vectors & Prevention',
-    artist: 'OWASP',
-    album: 'Web Security Deep Dive',
-    duration: '15 min read',
-    description: 'Comprehensive analysis of Cross-Site Scripting (XSS) vulnerabilities including stored, reflected, and DOM-based XSS. Covers advanced attack techniques and modern prevention strategies.',
-    vulnerability: 'Cross-Site Scripting (XSS)',
-    impact: 'Critical - Can lead to session hijacking, data theft, and complete account compromise',
-    attackVectors: [
-      'Stored XSS: Malicious scripts stored in database and executed when displayed',
-      'Reflected XSS: Malicious scripts reflected in HTTP response',
-      'DOM-based XSS: Client-side JavaScript manipulation',
-      'Blind XSS: Payloads executed in admin panels or internal systems'
-    ],
-    prevention: [
-      'Implement Content Security Policy (CSP) headers',
-      'Use proper output encoding for different contexts',
-      'Implement input validation and sanitization',
-      'Use modern frameworks with built-in XSS protection',
-      'Regular security audits and penetration testing'
-    ],
-    demoPayloads: [
-      '<script>alert("XSS")</script>',
-      'javascript:alert(document.cookie)',
-      '<img src=x onerror=alert(1)>',
-      '<svg onload=alert(1)>'
-    ],
-    technologies: ['JavaScript', 'HTML', 'Web Security', 'OWASP'],
+    type: 'Ethical Hacking',
+    title: 'Ethical HAcking learnings',
+    artist: 'Zsecurity',
+    album: 'Ethical hacing tutorials',
+    duration: '15 hr',
     category: 'Ethical Hacking',
     image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=400&fit=crop',
-    link: 'https://owasp.org/www-community/attacks/xss/',
-    github: 'https://github.com/Mayankgupta1754/xss-security-guide',
-    sharedDate: '2024',
-    difficulty: 'Advanced',
-    contentType: 'Security Analysis',
-    keyTakeaways: [
-      'Understood advanced XSS attack vectors and bypass techniques',
-      'Implemented comprehensive XSS prevention strategies',
-      'Learned modern web security best practices'
-    ]
+    link: 'https://autonomousedgeintelligence.notion.site/Ethical-Hacking-2cd8af91f3af8087913fc28a79e5253f'
   },
   {
     id: 3,
-    type: 'notion',
-    title: 'Complete System Design Study Notes',
-    artist: 'Personal Knowledge Base',
-    album: 'System Design & Architecture',
-    duration: '25 min read',
-    description: 'Comprehensive Notion workspace covering system design fundamentals, scalability patterns, database design, caching strategies, and real-world case studies from major tech companies.',
-    notionPages: [
-      'System Design Fundamentals',
-      'Scalability & Performance',
-      'Database Design & Indexing',
-      'Caching Strategies (Redis, Memcached)',
-      'Load Balancing & CDN',
-      'Microservices Architecture',
-      'API Design & RESTful Services',
-      'Message Queues & Event Streaming',
-      'Case Studies: Netflix, Uber, Instagram'
-    ],
-    contents: [
-      'Detailed architecture diagrams and flowcharts',
-      'Code examples for different design patterns',
-      'Performance benchmarks and optimization techniques',
-      'Interview questions and solutions',
-      'Real-world implementation examples',
-      'Progress tracking and review schedules'
-    ],
-    templates: [
-      'System Design Interview Template',
-      'API Documentation Template',
-      'Database Schema Design Template',
-      'Performance Testing Checklist'
-    ],
-    technologies: ['System Design', 'Distributed Systems', 'Databases', 'APIs'],
+    type: 'Data Science',
+    title: 'Data Science learnings',
+    artist: 'Udemy',
+    album: 'Data Science Notes',
+    duration: '85 hrs',
     category: 'Study Notes',
     image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&h=400&fit=crop',
-    link: 'https://mayankgupta.notion.site/System-Design-Study-Notes-1234567890',
-    github: '#',
-    sharedDate: '2024',
-    difficulty: 'Advanced',
-    contentType: 'Knowledge Base',
-    keyTakeaways: [
-      'Built comprehensive system design knowledge base',
-      'Mastered scalability and performance optimization',
-      'Prepared for senior engineering interviews',
-      'Created reusable templates for system design work'
-    ]
+    link: 'https://autonomousedgeintelligence.notion.site/Data-Scientist-26a8af91f3af802f8249f82eaed4cc59?pvs=74'
   },
   {
     id: 4,
-    type: 'project',
-    title: 'AI-Powered Code Review Assistant',
-    artist: 'Personal Project',
-    album: 'AI & DevOps Integration',
-    duration: '20 min read',
-    description: 'An intelligent code review tool that uses machine learning to analyze code quality, detect bugs, suggest improvements, and provide automated feedback for pull requests.',
-    projectFeatures: [
-      'Automated code quality analysis using AST parsing',
-      'Bug detection with pattern recognition',
-      'Security vulnerability scanning',
-      'Performance optimization suggestions',
-      'Code style and best practices enforcement',
-      'Integration with GitHub/GitLab webhooks',
-      'Custom rule engine for team-specific guidelines'
-    ],
-    technologies: ['Python', 'FastAPI', 'OpenAI GPT', 'PostgreSQL', 'Docker', 'GitHub API'],
-    category: 'AI Project',
+    type: 'Cheat Sheets',
+    title: 'Cheat Sheets Compilation',
+    artist: 'Notes',
+    album: 'cheat sheets',
+    duration: '50 hrs',
+    category: 'Cheat sheets',
     image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=400&fit=crop',
-    link: 'https://github.com/Mayankgupta1754/ai-code-reviewer',
-    github: 'https://github.com/Mayankgupta1754/ai-code-reviewer',
-    sharedDate: '2024',
-    difficulty: 'Advanced',
-    contentType: 'Full-Stack Project',
-    keyTakeaways: [
-      'Integrated AI/ML with software development workflows',
-      'Built scalable microservices architecture',
-      'Implemented real-time webhook processing',
-      'Created production-ready DevOps pipeline'
-    ]
+    link: 'https://autonomousedgeintelligence.notion.site/Cheat-Sheets-2608af91f3af80a5b3bdf5ded89621fb'
   },
   {
     id: 5,
-    type: 'tutorial',
-    title: 'Building Production-Ready APIs with FastAPI',
-    artist: 'Tutorial Series',
-    album: 'Backend Development',
-    duration: '30 min read',
-    description: 'Complete tutorial series covering advanced FastAPI concepts including async programming, dependency injection, authentication, database integration, testing, and deployment.',
-    tutorialModules: [
-      'FastAPI fundamentals and async/await patterns',
-      'Pydantic models and automatic validation',
-      'SQLAlchemy ORM integration with Alembic migrations',
-      'JWT authentication and role-based access control',
-      'Redis caching and background task processing',
-      'Comprehensive testing with pytest and httpx',
-      'Docker containerization and deployment strategies',
-      'API documentation and versioning',
-      'Monitoring, logging, and error handling'
-    ],
-    technologies: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'JWT'],
+    type: 'Data Analytics',
+    title: 'Data Analytics Learnings',
+    artist: 'Course Learnings',
+    album: 'course learnings',
+    duration: '95 hrs',
     category: 'Tutorial',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=400&fit=crop',
-    link: 'https://github.com/Mayankgupta1754/fastapi-production-tutorial',
-    github: 'https://github.com/Mayankgupta1754/fastapi-production-tutorial',
-    sharedDate: '2024',
-    difficulty: 'Intermediate',
-    contentType: 'Tutorial Series',
-    keyTakeaways: [
-      'Mastered production-ready API development',
-      'Implemented comprehensive authentication and security',
-      'Learned advanced testing and deployment practices',
-      'Built scalable and maintainable backend systems'
-    ]
-  },
-  {
-    id: 6,
-    type: 'dsa',
-    title: 'Graph Algorithms Implementation Guide',
-    artist: 'GeeksforGeeks',
-    album: 'Advanced Data Structures',
-    duration: '18 min read',
-    description: 'Complete implementation guide for graph algorithms including DFS/BFS traversal, shortest paths (Dijkstra, Bellman-Ford), minimum spanning trees (Kruskal, Prim), and topological sorting.',
-    algorithms: [
-      {
-        name: 'Depth First Search (DFS)',
-        timeComplexity: 'O(V + E)',
-        applications: ['Connected components', 'Cycle detection', 'Topological sorting']
-      },
-      {
-        name: 'Breadth First Search (BFS)',
-        timeComplexity: 'O(V + E)',
-        applications: ['Shortest path in unweighted graph', 'Level order traversal']
-      },
-      {
-        name: 'Dijkstra\'s Algorithm',
-        timeComplexity: 'O((V + E) log V)',
-        applications: ['Single source shortest path', 'Network routing']
-      },
-      {
-        name: 'Kruskal\'s MST',
-        timeComplexity: 'O(E log E)',
-        applications: ['Minimum spanning tree', 'Network design']
-      }
-    ],
-    implementations: [
-      'Adjacency List representation',
-      'Priority Queue for Dijkstra',
-      'Union-Find for Kruskal',
-      'Recursive and iterative approaches'
-    ],
-    technologies: ['Python', 'Graphs', 'Algorithms', 'Data Structures'],
-    category: 'DSA',
-    image: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=400&fit=crop',
-    link: 'https://github.com/Mayankgupta1754/graph-algorithms',
-    github: 'https://github.com/Mayankgupta1754/graph-algorithms',
-    sharedDate: '2024',
-    difficulty: 'Advanced',
-    contentType: 'Algorithm Guide',
-    keyTakeaways: [
-      'Mastered complex graph algorithms and their implementations',
-      'Understood algorithm design and optimization techniques',
-      'Applied graph theory to real-world problems',
-      'Built efficient data structures for graph representations'
-    ]
-  },
-  {
-    id: 7,
-    type: 'ethical_hacking',
-    title: 'Network Packet Analysis with Wireshark',
-    artist: 'Wireshark Foundation',
-    album: 'Network Security Tools',
-    duration: '14 min read',
-    description: 'Hands-on guide to network traffic analysis using Wireshark. Covers packet capture, protocol dissection, traffic filtering, and identifying security threats in network communications.',
-    analysisTechniques: [
-      'Packet capture and display filters',
-      'Protocol hierarchy statistics',
-      'TCP stream reconstruction',
-      'Expert information analysis',
-      'Following TCP conversations'
-    ],
-    securityApplications: [
-      'Detecting man-in-the-middle attacks',
-      'Identifying suspicious network traffic',
-      'Analyzing malware communications',
-      'Investigating data exfiltration',
-      'Monitoring network performance and anomalies'
-    ],
-    commonFilters: [
-      'http contains "password"',
-      'tcp.port == 443 and ssl.handshake',
-      'ip.src == 192.168.1.1 or ip.dst == 192.168.1.1',
-      'dns and !mdns'
-    ],
-    technologies: ['Wireshark', 'Network Protocols', 'TCP/IP', 'Security Analysis'],
-    category: 'Ethical Hacking',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=400&fit=crop',
-    link: 'https://wiki.wireshark.org/',
-    github: 'https://github.com/Mayankgupta1754/network-analysis-guide',
-    sharedDate: '2024',
-    difficulty: 'Intermediate',
-    contentType: 'Network Analysis',
-    keyTakeaways: [
-      'Mastered network traffic analysis techniques',
-      'Learned to identify security threats in packet data',
-      'Understood protocol-level communication patterns',
-      'Built skills for network forensics and monitoring'
-    ]
-  },
-  {
-    id: 8,
-    type: 'notion',
-    title: 'Interview Preparation Dashboard',
-    artist: 'Personal Knowledge Base',
-    album: 'Career Development',
-    duration: '12 min read',
-    description: 'Comprehensive interview preparation system with question banks, progress tracking, company research templates, and performance analytics for technical and behavioral interviews.',
-    dashboardSections: [
-      'Technical Interview Questions by Topic',
-      'System Design Case Studies',
-      'Behavioral Interview Preparation',
-      'Company Research Templates',
-      'Progress Tracking & Analytics',
-      'Mock Interview Scheduling',
-      'Feedback Collection System'
-    ],
-    questionBanks: [
-      'Data Structures & Algorithms (150+ questions)',
-      'System Design (50+ scenarios)',
-      'Programming Languages (Python, Java, JavaScript)',
-      'Database Design & SQL',
-      'Web Development & APIs',
-      'Machine Learning & AI'
-    ],
-    trackingFeatures: [
-      'Question difficulty ratings',
-      'Time spent per question',
-      'Success rate analytics',
-      'Weak topic identification',
-      'Progress visualization'
-    ],
-    technologies: ['Notion', 'Interview Prep', 'Career Development', 'Analytics'],
-    category: 'Productivity',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=400&fit=crop',
-    link: 'https://mayankgupta.notion.site/Interview-Prep-Dashboard-1234567890',
-    github: '#',
-    sharedDate: '2024',
-    difficulty: 'Intermediate',
-    contentType: 'Career Tool',
-    keyTakeaways: [
-      'Built comprehensive interview preparation system',
-      'Developed structured learning and tracking methodology',
-      'Created reusable templates for career development',
-      'Implemented progress analytics and feedback systems'
-    ]
+    link: 'https://autonomousedgeintelligence.notion.site/Data-Analyst-24c8af91f3af80ed8c2be839d3ba4751'
   }
 ];
 

@@ -61,7 +61,7 @@ const Home = ({ setActiveSection }) => {
   const featuredSections = [
     {
       id: 'knowledge-sharing',
-      title: 'Knowledge Sharing',
+      title: 'Knowledge Playlisyts',
       subtitle: 'Tutorials, Guides & Resources',
       image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop',
       gradient: 'from-yellow-600 to-orange-600'

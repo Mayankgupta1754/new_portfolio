@@ -40,7 +40,7 @@ const KnowledgeSharing = ({ setActiveSection }) => {
 
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Knowledge Sharing</h1>
+        <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Knowledge Playlists</h1>
         <div className="w-20 h-1 bg-spotify-green rounded"></div>
         <p className="text-gray-400 mt-4 text-lg">My learning journey - {knowledgeSharingData.length} tracks</p>
       </div>

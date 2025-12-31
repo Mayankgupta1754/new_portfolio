@@ -40,6 +40,8 @@ function App() {
       setActiveSection(section);
       // Push state to browser history
       window.history.pushState({ section }, '', `#${section}`);
+      // Scroll to top when changing sections
+      window.scrollTo(0, 0);
     }
   };
 

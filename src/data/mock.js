@@ -562,7 +562,7 @@ export const personalityData = [
   favoriteQuote: '"Where words fail, music speaks." - Hans Christian Andersen',
   personalStory: 'Music has always been part of my daily routine—whether it’s focus playlists while coding or late-night jamming sessions. I enjoy discovering new artists and organizing songs into playlists that match different vibes.',
   goalsAndAspirations: 'Keep exploring new music, curate better playlists, and use music as a creative and calming outlet.',
-  image: '/assets/mayank.jpg'
+  image: '/assests/mayank.jpg'
 },
   {
   id: 3,

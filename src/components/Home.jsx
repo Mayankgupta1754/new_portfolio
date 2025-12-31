@@ -46,7 +46,7 @@ const Home = ({ setActiveSection }) => {
       id: 'education',
       title: 'Education',
       description: 'Academic background',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300&h=300&fit=crop',
+      image: 'https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=300&h=300&fit=crop',
       color: 'from-pink-500 to-rose-600'
     },
     {

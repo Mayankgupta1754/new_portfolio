@@ -87,7 +87,7 @@ const Home = ({ setActiveSection }) => {
       id: 'leetcode',
       title: 'LeetCode',
       description: 'Problem Solving & Algorithms',
-      url: 'https://leetcode.com/Mayankgupta1754',
+      url: 'https://leetcode.com/u/themayankgupta17/',
       icon: '💡',
       color: 'from-orange-500 to-red-600'
     },

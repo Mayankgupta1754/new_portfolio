@@ -95,7 +95,7 @@ const Home = ({ setActiveSection }) => {
       id: 'kaggle',
       title: 'Kaggle',
       description: 'Data Science & ML Competitions',
-      url: 'https://kaggle.com/mayankgupta1754',
+      url: 'https://www.kaggle.com/mayankgupta17',
       icon: '📊',
       color: 'from-blue-500 to-cyan-600'
     },
@@ -119,17 +119,9 @@ const Home = ({ setActiveSection }) => {
       id: 'hackerrank',
       title: 'HackerRank',
       description: 'Coding Challenges',
-      url: 'https://hackerrank.com/mayankgupta1754',
+      url: 'https://www.hackerrank.com/profile/themayankgupta17',
       icon: '🎯',
       color: 'from-green-500 to-emerald-600'
-    },
-    {
-      id: 'medium',
-      title: 'Medium',
-      description: 'Technical Writing',
-      url: 'https://medium.com/@mayankgupta1754',
-      icon: '✍️',
-      color: 'from-black to-gray-700'
     }
   ];
 

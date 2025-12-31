@@ -32,44 +32,55 @@ export const aboutData = {
 export const projectsData = [
   {
     id: 1,
-    title: 'CamJett – Smart Face Recognition Door Lock',
-    description: 'An intelligent security system combining face recognition, RFID authentication, and access logging with a web-based admin dashboard.',
-    technologies: ['Python', 'OpenCV', 'Flask', 'Raspberry Pi', 'Arduino', 'IoT'],
-    category: 'AI + IoT',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop',
-    link: '#',
-    github: '#'
+    title: 'Autonomous Firefighting Robot',
+    description: 'A smart autonomous robot capable of detecting and extinguishing fire using sensors, computer vision, and real-time motor control.',
+    technologies: ['Python', 'OpenCV', 'Arduino', 'Raspberry Pi', 'Embedded Systems', 'Robotics'],
+    category: 'Robotics & AI',
+    image: 'assests/robot.jpg',
+    link: 'https://autonomousedgeintelligence.notion.site/Autonomous-Firefighting-Robot-with-Human-Detection-2658af91f3af80c19389ebb6b9198f52?pvs=74',
+    github: 'https://autonomousedgeintelligence.notion.site/Autonomous-Firefighting-Robot-with-Human-Detection-2658af91f3af80c19389ebb6b9198f52?pvs=74'
   },
   {
     id: 2,
-    title: 'Smart Firefighting Robot',
-    description: 'Autonomous robot capable of detecting and extinguishing fire using sensors, computer vision, and real-time motor control.',
-    technologies: ['Python', 'OpenCV', 'Arduino', 'Raspberry Pi', 'Embedded Systems'],
-    category: 'Robotics & AI',
-    image: 'https://images.unsplash.com/photo-1516110833967-0b5716ca1387?w=800&h=400&fit=crop',
-    link: '#',
-    github: '#'
+    title: 'CyberJett – NLP-Based Voice Assistant',
+    description: 'A voice-controlled AI assistant built using NLP and deep learning, capable of understanding intents, responding via speech, and controlling hardware through Arduino.',
+    technologies: ['Python', 'NLP', 'TensorFlow', 'Keras', 'Arduino', 'Speech Recognition'],
+    category: 'AI & NLP',
+    image: '/assests/nlp.jpg',
+    link: 'https://cyberjettvoiceassistant.notion.site/CyberJett-Voice-Based-AI-Assistant-24291bf37816802d8e8ef6ad00f0b2ae',
+    github: 'https://github.com/Mayankgupta1754/CyberJett_Voice_Based_AI_Assistant'
   },
   {
     id: 3,
-    title: 'Machine Learning Analytics Projects',
-    description: 'A collection of end-to-end ML projects covering regression, classification, clustering, and real-world dataset analysis.',
-    technologies: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib'],
-    category: 'Data Science',
-    image: 'https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&h=400&fit=crop',
-    link: '#',
-    github: '#'
+    title: 'Suspicious Web Threat Interaction Analysis',
+    description: 'A cybersecurity-focused data analysis project aimed at identifying suspicious web interactions and potential threats through behavioral patterns.',
+    technologies: ['Python', 'Pandas', 'NumPy', 'Cyber Security', 'Data Analysis'],
+    category: 'Cyber Security',
+    image: '/assests/cyber.jpg',
+    link: 'https://autonomousedgeintelligence.notion.site/Cybersecurity-Suspicious-Web-Threat-Interactions-26d8af91f3af80ddb300d26de3dfce23?pvs=74',
+    github: 'https://www.kaggle.com/code/mayankgupta17/cybersecurity-suspicious-web-threat-interactions'
   },
   {
     id: 4,
-    title: 'Ethical Hacking & Network Security Labs',
-    description: 'Hands-on labs focusing on network analysis, system vulnerabilities, and ethical hacking fundamentals.',
-    technologies: ['Linux', 'Networking', 'Security Tools', 'Python'],
-    category: 'Cyber Security',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop',
+    title: 'Retail Sales Analytics Dashboard',
+    description: 'An interactive Power BI dashboard providing insights into retail sales performance, trends, and key business metrics for decision-making.',
+    technologies: ['Power BI', 'Data Analytics', 'DAX', 'Data Visualization'],
+    category: 'Data Analytics',
+    image: '/assests/dash.jpg',
+    link: 'https://autonomousedgeintelligence.notion.site/Retail-Sales-Analysis-Dashboard-with-Power-BI-26e8af91f3af8063bf4ffaad22916c5a?pvs=74',
+    github: 'https://autonomousedgeintelligence.notion.site/Retail-Sales-Analysis-Dashboard-with-Power-BI-26e8af91f3af8063bf4ffaad22916c5a?pvs=74'
+  },
+  {
+    id: 5,
+    title: 'CamJett – Face Recognition Smart Door Lock',
+    description: 'An intelligent door security system using face recognition for access control, integrated with hardware locking mechanisms and access logging.',
+    technologies: ['Python', 'OpenCV', 'Raspberry Pi', 'Arduino', 'Computer Vision', 'IoT'],
+    category: 'AI + IoT',
+    image: '/assests/face.webp',
     link: '#',
     github: '#'
   }
+
 ];
 
 export const skillsData = {
@@ -551,7 +562,7 @@ export const personalityData = [
   favoriteQuote: '"Where words fail, music speaks." - Hans Christian Andersen',
   personalStory: 'Music has always been part of my daily routine—whether it’s focus playlists while coding or late-night jamming sessions. I enjoy discovering new artists and organizing songs into playlists that match different vibes.',
   goalsAndAspirations: 'Keep exploring new music, curate better playlists, and use music as a creative and calming outlet.',
-  image: '/assests/mayank.jpg'
+  image: '/assets/mayank.jpg'
 },
   {
   id: 3,

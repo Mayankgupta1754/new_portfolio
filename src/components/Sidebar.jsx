@@ -123,7 +123,9 @@ const Sidebar = ({ activeSection, setActiveSection, isMobileMenuOpen, setIsMobil
             <Linkedin size={20} />
           </a>
           <a
-            href={profileData.social.email}
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent('themayankgupta17@gmail.com')}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-gray-400 hover:text-spotify-green transition-colors"
           >
             <Mail size={20} />

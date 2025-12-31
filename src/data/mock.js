@@ -1,6 +1,6 @@
 export const profileData = {
   name: 'Mayank Gupta',
-  title: 'Data Science, Machine Learning, AI & Ethical Hacking Enthusiast',
+  title: 'Debugging life, one dataset at a time.',
   tagline: 'A curated space showcasing my journey, my work, and the ideas I\'m bringing to life.',
   profileImage: 'https://customer-assets.emergentagent.com/job_6e45107b-7f1c-49cf-95db-7b815b8d2de1/artifacts/6hw1f7ll_1736653887401.jpg',
   email: 'themayankgupta17@gmail.com',
@@ -13,16 +13,17 @@ export const profileData = {
 };
 
 export const aboutData = {
-  bio: 'Data Science, Analytics, Machine Learning, AI, and Ethical Hacking enthusiast pursuing a B.Tech in Computer Science at VIT Vellore. Passionate about solving real-world problems through data-driven approaches and intelligent systems, with a strong focus on continuous learning and hands-on building.',
+  bio: 'B.Tech Computer Science student at VIT Vellore with a strong focus on Data Science, Data Analytics, Machine Learning, and AI, and a growing interest in Ethical Hacking. I build data-driven and intelligent systems using real-world datasets, while actively exploring security concepts to understand how systems can be designed to be both smart and secure. Passionate about hands-on learning, problem-solving, and developing solutions that go beyond academic theory.',
   highlights: [
     'Built 25+ AI/ML projects using real-world datasets',
     'Strong experience in EDA, feature engineering, and predictive modeling',
     'Hands-on work with ML integration in web and IoT systems',
     'Mentored 250+ students through workshops and technical sessions',
-    'Hackathon winner and active community contributor'
+    'Hackathon winner and active tech community contributor'
   ],
   interests: ['Data Science','Machine Learning',
     'Deep Learning',
+    'Artificial Intelligence',
     'Data Analytics',
     'Ethical Hacking',
     'Applied AI Systems']
@@ -76,17 +77,52 @@ export const skillsData = {
     { name: 'Python', level: 90 },
     { name: 'Java', level: 85 },
     { name: 'Machine Learning', level: 88 },
-    { name: 'Data Analysis', level: 80 },
+    { name: 'Data Analytics', level: 80 },
     { name: 'Data Science', level: 85 },
     { name: 'Deep Learning', level: 78 },
-    { name: 'Computer Vision', level: 70 },
+    { name: 'Artificial Intelligence', level: 70 },
     { name: 'Ethical Hacking', level: 75 }
   ],
-  tools: [
-    'Pandas', 'NumPy', 'Scikit-learn', 'OpenCV',
-    'Flask', 'FastAPI', 'Git', 'Linux',
-    'Raspberry Pi', 'Arduino'
-  ],
+    tools: [
+  'Python',
+  'Java',
+  'SQL',
+  'Pandas',
+  'NumPy',
+  'Scikit-learn',
+  'Data Cleaning',
+  'Data Visualization',
+  'Matplotlib',
+  'Seaborn',
+  'Plotly',
+  'Statistical Analysis',
+  'Hypothesis Testing',
+  'EDA',
+  'Feature Engineering',
+  'TensorFlow',
+  'Keras',
+  'PyTorch',
+  'OpenCV',
+  'MediaPipe',
+  'Tableau',
+  'Power BI',
+  'Excel',
+  'Model Evaluation',
+  'Cross-Validation',
+  'Hyperparameter Tuning',
+  'Git',
+  'GitHub',
+  'Linux',
+  'Raspberry Pi',
+  'Arduino',
+  'IoT Sensors',
+  'Ethical Hacking (Fundamentals)',
+  'Jupyter Notebook',
+  'Google Colab',
+  'VS Code',
+  'Kaggle'
+],
+
   softSkills: [
     'Problem Solving', 'Team Leadership', 'Communication',
     'Project Management', 'Research', 'Mentoring'
@@ -98,9 +134,9 @@ export const experienceData = [
     id: 1,
     company: 'Pantech Solutions',
     position: 'AI & Machine Learning Intern',
-    duration: 'Remote Internship',
+    duration: 'Dec 2023 - March 2024',
     location: 'Remote',
-    description: 'Worked on multiple hands-on projects across AI, ML, deep learning, and data science domains.',
+    description: 'Worked on hands-on projects across AI, Machine Learning, Deep Learning, and Data Science, focusing on real-world datasets and practical problem-solving.',
     achievements: [
       'Completed 25+ projects across AI, ML, and Data Science',
       'Gained strong practical exposure to real-world datasets',
@@ -113,7 +149,7 @@ export const experienceData = [
     position: 'Technical Head',
     duration: '2024 - 2025',
     location: 'VIT Vellore',
-    description: 'Led workshops, mentored juniors, and contributed to technical community growth.',
+    description: 'Led technical initiatives, workshops, and mentoring activities to grow the AI/ML community within the university.',
     achievements: [
       'Mentored 250+ students',
       'Conducted workshops on Git, ML, and AI fundamentals',
@@ -143,7 +179,8 @@ export const educationData = [
     degree: 'Higher Secondary Education',
     field: 'Science Stream',
     duration: '2020 – 2022',
-    gpa: 'XII - 92.5%, X - 91%',
+    tenthPercentage: '91%',
+    twelfthPercentage: '92.5%',
     achievements: [
       'Graduated with high distinction',
       'Active participant in science and tech fairs',
@@ -498,56 +535,93 @@ export const knowledgeSharingData = [
 ];
 
 export const personalityData = [
+   
   {
+  id: 2,
+  title: 'Music Lover',
+  category: 'Music',
+  description: 'I enjoy listening to modern genres and curating playlists that match different moods, moments, and focus sessions. Music is my go-to way to relax and stay inspired.',
+  tags: [
+    'Playlist Curation',
+    'Modern Music',
+    'Genre Exploration',
+    'Mood-Based Music',
+    'Jamming & Relaxation'
+  ],
+  favoriteQuote: '"Where words fail, music speaks." - Hans Christian Andersen',
+  personalStory: 'Music has always been part of my daily routine—whether it’s focus playlists while coding or late-night jamming sessions. I enjoy discovering new artists and organizing songs into playlists that match different vibes.',
+  goalsAndAspirations: 'Keep exploring new music, curate better playlists, and use music as a creative and calming outlet.',
+  image: '/assests/mayank.jpg'
+},
+  {
+  id: 3,
+  title: 'Car Enthusiast',
+  category: 'Automotive',
+  description: 'Passionate about cars, automotive technology, and everything related to engines, design, and driving experiences.',
+  tags: [
+    'Car Design',
+    'Automotive Technology',
+    'Driving Enthusiast',
+    'Car Modifications',
+    'Motorsports'
+  ],
+  favoriteQuote: '"It\'s not just a car, it\'s a way of life."',
+  personalStory: 'I have always been fascinated by cars, from their design to the engineering behind them. I enjoy learning about new models, attending auto shows, and exploring performance tuning.',
+  goalsAndAspirations: 'To deepen my knowledge of automotive technology, experiment with car modifications, and experience motorsports firsthand.',
+  image: '/assests/car.jpg'
+},
+{
     id: 1,
     title: 'Gaming Enthusiast',
     category: 'Gaming',
-    description: 'Passionate about strategy games and competitive gaming. Love exploring new game mechanics and participating in gaming communities.',
-    tags: ['Strategy Games', 'Competitive Gaming', 'Game Development', 'Community'],
+    description: 'Passionate about competitive and strategy-based gaming, with a strong interest in tactical decision-making, teamwork, and continuous improvement. I enjoy exploring game mechanics, mastering strategies, and being part of active gaming communities.',
+    tags: ['Competitive Gaming (Valorant)',
+  'Strategy & Tactical Play',
+  'Team Coordination & Game Sense',
+  'Mind Games (Sudoku, Elevate)',
+  'Gaming Communities',
+  'Esports Culture'],
     favoriteQuote: '"Games are the most elevated form of investigation." - Albert Einstein',
-    personalStory: 'My gaming journey started with simple puzzle games and evolved into competitive strategy gaming. I\'ve participated in multiple gaming tournaments and enjoy the strategic depth that games like Civilization and StarCraft offer.',
-    goalsAndAspirations: 'To develop my own indie game and create gaming content that educates and entertains. I also want to explore game development using AI and procedural generation techniques.'
+    personalStory: 'My gaming journey began with casual and puzzle games and gradually evolved into competitive multiplayer gaming. Titles like Valorant sharpened my strategic thinking, communication, and adaptability under pressure—skills that naturally translate into my tech and problem-solving mindset.',
+    goalsAndAspirations: 'Explore game development while experimenting with AI-driven gameplay, intelligent agents, and educational gaming content.',
+    image: '/assests/gaming.jpg'
   },
+
   {
-    id: 2,
-    title: 'Music Lover',
-    category: 'Music',
-    description: 'Deep appreciation for classical and electronic music. Enjoy discovering new artists and understanding music theory.',
-    tags: ['Classical Music', 'Electronic Music', 'Music Production', 'Audio Engineering'],
-    favoriteQuote: '"Music is the universal language of mankind." - Henry Wadsworth Longfellow',
-    personalStory: 'Music has been my constant companion through life\'s ups and downs. I started with classical piano lessons and later discovered electronic music production. I find solace in creating beats and exploring different musical genres.',
-    goalsAndAspirations: 'To produce my own music album and collaborate with artists from different genres. I also want to learn advanced music production techniques and possibly start a music blog or podcast.'
-  },
+  id: 4,
+  title: 'Animal Lover',
+  category: 'Pets & Animals',
+  description: 'I enjoy taking care of pets and helping stray animals. Passionate about animal welfare and creating a safe environment for them.',
+  tags: [
+    'Pet Care',
+    'Animal Welfare',
+    'Stray Animal Rescue',
+    'Volunteering',
+    'Compassion & Empathy'
+  ],
+  favoriteQuote: '"The greatness of a nation and its moral progress can be judged by the way its animals are treated." - Mahatma Gandhi',
+  personalStory: 'I have always loved animals and spend time caring for pets and helping stray animals whenever possible. Whether it’s feeding, rescuing, or just spending time with them, I find joy and fulfillment in being around animals.',
+  goalsAndAspirations: 'To continue helping stray animals and raise awareness about animal welfare, while providing loving care to pets.',
+  image: '/assests/animal.jpeg'
+}
+,
   {
-    id: 3,
-    title: 'Tech Explorer',
-    category: 'Technology',
-    description: 'Always curious about emerging technologies. Love tinkering with gadgets and exploring the latest in AI and robotics.',
-    tags: ['Emerging Tech', 'AI', 'Robotics', 'Gadgets'],
-    favoriteQuote: '"The best way to predict the future is to create it." - Peter Drucker',
-    personalStory: 'My fascination with technology began when I built my first computer. From there, I\'ve explored everything from AI algorithms to robotics projects. I love the challenge of solving real-world problems through technology.',
-    goalsAndAspirations: 'To work on cutting-edge AI projects that make a positive impact on society. I want to build autonomous systems and explore the intersection of AI with other fields like healthcare and education.'
-  },
-  {
-    id: 4,
-    title: 'Nature Photographer',
-    category: 'Photography',
-    description: 'Find peace in capturing the beauty of nature. Special interest in landscape and wildlife photography.',
-    tags: ['Landscape Photography', 'Wildlife', 'Nature', 'Digital Art'],
-    favoriteQuote: '"In every walk with nature, one receives far more than he seeks." - John Muir',
-    personalStory: 'Photography became my passion during long hikes in the mountains. I started with a simple smartphone and gradually invested in better equipment. Nature photography teaches me patience and appreciation for the world around us.',
-    goalsAndAspirations: 'To capture the natural beauty of different ecosystems around the world. I want to publish a photography book and teach workshops on nature photography techniques.'
-  },
-  {
-    id: 5,
-    title: 'Data Science Enthusiast',
-    category: 'Data Science',
-    description: 'Passionate about extracting insights from data and building predictive models that solve real-world problems.',
-    tags: ['Machine Learning', 'Data Analysis', 'Python', 'Statistics'],
-    favoriteQuote: '"Data is the new oil." - Clive Humby',
-    personalStory: 'My journey into data science began with curiosity about patterns in everyday data. I taught myself Python and statistics, and now I love building models that can predict outcomes and provide valuable insights.',
-    goalsAndAspirations: 'To work on large-scale data projects that drive business decisions and social impact. I want to advance my expertise in deep learning and contribute to open-source data science tools.'
-  },
+  id: 5,
+  title: 'Swimming Enthusiast',
+  category: 'Sports & Fitness',
+  description: 'Swimming is my way to stay fit, relax, and challenge myself physically and mentally. I enjoy both casual swims and competitive techniques.',
+  tags: [
+    'Swimming',
+    'Endurance Training',
+    'Fitness & Health',
+    'Water Sports',
+    'Personal Challenge'
+  ],
+  favoriteQuote: '"Just keep swimming." - Dory, Finding Nemo',
+  personalStory: 'I started swimming as a way to stay active and quickly fell in love with the sport. It teaches discipline, patience, and helps me clear my mind.',
+  goalsAndAspirations: 'To improve my swimming techniques, participate in local competitions, and maintain it as a regular fitness routine.',
+  image: '/assests/swim.jpg'
+},
   {
     id: 6,
     title: 'Ethical Hacker',
@@ -556,8 +630,20 @@ export const personalityData = [
     tags: ['Network Security', 'Penetration Testing', 'Linux', 'Cryptography'],
     favoriteQuote: '"The best defense is a good offense." - Unknown',
     personalStory: 'My interest in cybersecurity sparked when I learned about data breaches and their impact. I started learning ethical hacking techniques and now focus on helping organizations secure their systems.',
-    goalsAndAspirations: 'To become a certified ethical hacker and work with organizations to improve their security posture. I want to educate others about cybersecurity best practices and contribute to secure software development.'
-  }
+    goalsAndAspirations: 'To become a certified ethical hacker and work with organizations to improve their security posture. I want to educate others about cybersecurity best practices and contribute to secure software development.',
+    image: '/assests/hack.jpg'
+  },
+  {
+    id: 7,
+  title: 'Audio Book Reader',
+  category: 'Reading',
+  description: 'Passionate about audiobooks, using Headway to read books and note down important learnings.',
+  tags: ['Audiobooks', 'Reading', 'Learning', 'Headway', 'Knowledge'],
+  favoriteQuote: '"The more that you read, the more things you will know. The more that you learn, the more places you\'ll go." - Dr. Seuss',
+  personalStory: 'I use Headway to immerse myself in audiobooks, allowing me to learn on the go while noting down key insights and takeaways.',
+  goalsAndAspirations: 'To continue expanding my knowledge through audiobooks and apply the learnings in my daily life and work.',
+  image: '/assests/book.jpg'
+}
 ];
 
 export const certificatesData = [

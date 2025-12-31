@@ -43,10 +43,24 @@ const Education = ({ setActiveSection }) => {
                     <Calendar size={16} />
                     <span>{edu.duration}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Award size={16} />
-                    <span>GPA: {edu.gpa}</span>
-                  </div>
+                  {edu.gpa && (
+                    <div className="flex items-center gap-2">
+                      <Award size={16} />
+                      <span>GPA: {edu.gpa}</span>
+                    </div>
+                  )}
+                  {edu.tenthPercentage && (
+                    <div className="flex items-center gap-2">
+                      <Award size={16} />
+                      <span>10th: {edu.tenthPercentage}</span>
+                    </div>
+                  )}
+                  {edu.twelfthPercentage && (
+                    <div className="flex items-center gap-2">
+                      <Award size={16} />
+                      <span>12th: {edu.twelfthPercentage}</span>
+                    </div>
+                  )}
                 </div>
 
                 <div className="mt-4">

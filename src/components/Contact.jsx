@@ -125,7 +125,9 @@ const Contact = ({ setActiveSection }) => {
                 <Linkedin size={24} />
               </a>
               <a
-                href={`mailto:${contactData.email}`}
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(contactData.email)}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-spotify-dark flex items-center justify-center text-gray-400 hover:text-spotify-green transition-all"
               >
                 <Mail size={24} />

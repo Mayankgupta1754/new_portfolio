@@ -64,7 +64,15 @@ const Personality = ({ setActiveSection }) => {
           <div key={item.id} className="group cursor-pointer" onClick={() => handleCardClick(item)}>
             <div className="aspect-square bg-spotify-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 relative">
               <div className="w-full h-full bg-gradient-to-br from-spotify-green to-green-600 flex items-center justify-center">
-                {getIcon(item.category)}
+                {item.image ? (
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  getIcon(item.category)
+                )}
               </div>
               {/* Play Button Overlay */}
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
@@ -101,7 +109,15 @@ const Personality = ({ setActiveSection }) => {
               {/* Album Cover Style Display */}
               <div className="flex flex-col md:flex-row gap-6 mb-6">
                 <div className="w-64 h-64 mx-auto md:mx-0 bg-gradient-to-br from-spotify-green to-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                  {getIcon(selectedPersonality.category)}
+                  {selectedPersonality.image ? (
+                    <img
+                      src={selectedPersonality.image}
+                      alt={selectedPersonality.title}
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  ) : (
+                    getIcon(selectedPersonality.category)
+                  )}
                 </div>
                 <div className="flex-1">
                   <div className="text-xs text-spotify-green font-semibold mb-2">{selectedPersonality.category}</div>

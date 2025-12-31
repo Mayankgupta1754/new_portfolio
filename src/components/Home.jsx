@@ -18,7 +18,7 @@ const Home = ({ setActiveSection }) => {
       id: 'about',
       title: 'About Me',
       description: 'My journey and passion',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop',
+      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=300&fit=crop',
       color: 'from-indigo-500 to-purple-600'
     },
     {
@@ -70,7 +70,7 @@ const Home = ({ setActiveSection }) => {
       id: 'achievements',
       title: 'Achievements',
       subtitle: 'Accomplishments & Milestones',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=250&fit=crop',
+      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop',
       gradient: 'from-blue-600 to-purple-600'
     },
     {

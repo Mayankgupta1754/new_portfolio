@@ -204,13 +204,13 @@ export const knowledgeSharingData = [
   {
     id: 1,
     type: 'dsa',
-    title: 'Binary Tree Maximum Path Sum - LeetCode Hard',
+    title: '796. Rotate String - Leetcode Easy',
     artist: 'LeetCode',
     album: 'DSA Problem Solutions',
-    duration: '12 min read',
+    duration: '10 min read',
     category: 'DSA',
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=400&fit=crop',
-    link: 'https://leetcode.com/problems/binary-tree-maximum-path-sum/'
+    link: 'https://autonomousedgeintelligence.notion.site/796-Rotate-String-2dc8af91f3af803e8677f7dfa6911e6b'
   },
   {
     id: 2,

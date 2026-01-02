@@ -207,7 +207,7 @@ export const knowledgeSharingData = [
     title: '796. Rotate String - Leetcode Easy',
     artist: 'LeetCode',
     album: 'DSA Problem Solutions',
-    duration: '10 min read',
+    duration: '12 min read',
     category: 'DSA',
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=400&fit=crop',
     link: 'https://autonomousedgeintelligence.notion.site/796-Rotate-String-2dc8af91f3af803e8677f7dfa6911e6b'

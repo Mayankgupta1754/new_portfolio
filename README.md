@@ -1,4 +1,5 @@
-# Personal portfolio 
+# Personal Portfolio 
+A personal Portfolio for displaying self growth and passion towards learning
 
 # Getting Started with Create React App
 

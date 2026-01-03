@@ -213,6 +213,17 @@ export const knowledgeSharingData = [
     link: 'https://autonomousedgeintelligence.notion.site/796-Rotate-String-2dc8af91f3af803e8677f7dfa6911e6b'
   },
   {
+    id: 6,
+    type: 'dsa',
+    title: '242. Valid Anagram - Leetcode Easy',
+    artist: 'LeetCode',
+    album: 'DSA Problem Solutions',
+    duration: '10 min read',
+    category: 'DSA',
+    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&h=400&fit=crop',
+    link: 'https://autonomousedgeintelligence.notion.site/242-Valid-Anagram-2dd8af91f3af80708ec8c861b881251a?pvs=74'
+  },
+  {
     id: 2,
     type: 'Ethical Hacking',
     title: 'Ethical HAcking learnings',

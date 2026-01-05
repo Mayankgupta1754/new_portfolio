@@ -79,6 +79,16 @@ export const projectsData = [
     image: '/assests/face.webp',
     link: '#',
     github: '#'
+  },
+  {
+    id: 6,
+    title: 'MAGIE – Manual Autonomous Gyro-Integrated Explorer',
+    description: 'MAGIE is a dual-mode autonomous robot designed for fire evacuation and hazard monitoring, capable of navigating uneven terrain while detecting humans, animals, and potential fire risks in dangerous environments.',
+    technologies: ['Python', 'OpenCV', 'Raspberry Pi' , 'Computer Vision', 'IoT', 'ReactJS'],
+    category: 'AI + IoT + Web',
+    image: '/assests/magie.png',
+    link: 'https://magie-git-main-mayankgupta1754s-projects.vercel.app/',
+    github: 'https://github.com/Mayankgupta1754/MAGIE'
   }
 
 ];

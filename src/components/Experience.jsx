@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from './ui/card';
-import { ArrowLeft, Building, Calendar, MapPin, TrendingUp } from 'lucide-react';
+import { ArrowLeft, Building, Calendar, MapPin, TrendingUp, Award } from 'lucide-react';
 import { experienceData } from '../data/mock';
 import { Button } from './ui/button';
 
@@ -70,6 +70,30 @@ const Experience = ({ setActiveSection }) => {
                     ))}
                   </ul>
                 </div>
+
+                {exp.certificates && exp.certificates.length > 0 && (
+                  <div className="mt-4">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Award size={18} className="text-spotify-green" />
+                      <h4 className="text-white font-semibold">Certificates</h4>
+                    </div>
+                    <ul className="space-y-2">
+                      {exp.certificates.map((cert, idx) => (
+                        <li key={idx} className="flex items-start gap-3">
+                          <div className="w-2 h-2 bg-spotify-green rounded-full mt-2 flex-shrink-0"></div>
+                          <a
+                            href={cert.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-spotify-green hover:text-green-400 transition-colors underline"
+                          >
+                            {cert.title}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </div>
           </Card>

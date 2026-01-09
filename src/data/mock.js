@@ -153,6 +153,25 @@ export const skillsData = {
 export const experienceData = [
   {
     id: 1,
+    company: 'PROJFUEL - IT solutions Agency',
+    position: 'Data Science Intern',
+    duration: 'June 2025 - July 2025',
+    location: 'On - site',
+    description: 'Completed a one-month Data Science internship involving EDA, preprocessing, and ML tasks.',
+    achievements:[
+  "Successfully completed a full-time on-site Data Science Internship at ProjFuel",
+  "Worked on real-world data involving cleaning, preprocessing, EDA, and model implementation",
+  "Collaborated closely with Data Engineering and Product teams to align technical outputs with business goals",
+  "Maintained structured documentation and followed professional coding standards including PEP-8 and version control workflows",
+  "Delivered final project findings and recommendations to the team during scheduled presentations"
+],
+    certificates: [
+      { title: 'Internship Certificate', link: 'https://drive.google.com/file/d/1example/view?usp=sharing' }
+    ]
+
+  },
+  {
+    id: 2,
     company: 'Pantech Solutions',
     position: 'AI & Machine Learning Intern',
     duration: 'Dec 2023 - March 2024',
@@ -162,10 +181,14 @@ export const experienceData = [
       'Completed 25+ projects across AI, ML, and Data Science',
       'Gained strong practical exposure to real-world datasets',
       'Improved understanding of end-to-end ML workflows'
+    ],
+    certificates: [
+      { title: 'AI/ML Internship Certificate', link: 'https://example.com/cert2' },
+      { title: 'Offer Letter', link: 'https://example.com/offer2' }
     ]
   },
   {
-    id: 2,
+    id: 3,
     company: 'The AI ML Club, VIT Vellore',
     position: 'Technical Head',
     duration: '2024 - 2025',
@@ -175,6 +198,9 @@ export const experienceData = [
       'Mentored 250+ students',
       'Conducted workshops on Git, ML, and AI fundamentals',
       'Organized and led technical events and sessions'
+    ],
+    certificates: [
+      { title: 'Leadership Certificate', link: 'https://example.com/cert3' }
     ]
   }
 ];

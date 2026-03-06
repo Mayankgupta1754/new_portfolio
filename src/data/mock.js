@@ -9,7 +9,7 @@ export const profileData = {
     linkedin: 'https://www.linkedin.com/in/mayank-gupta-218636253/',
     email: 'mailto:themayankgupta17@gmail.com'
   },
-  resumeUrl: 'https://drive.google.com/file/d/1Oc7E2bPq0Prr1dHkNEym0PRkHzAWqb-Q/view?usp=sharing'
+  resumeUrl: 'https://drive.google.com/file/d/1S_DvyNiNvdtr1lTGxfcB1tcUV604IL_R/view?usp=sharing'
 };
 
 export const aboutData = {
@@ -304,7 +304,18 @@ export const knowledgeSharingData = [
     category: 'Tutorial',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=400&fit=crop',
     link: 'https://autonomousedgeintelligence.notion.site/Data-Analyst-24c8af91f3af80ed8c2be839d3ba4751'
-  }
+  },
+  {
+    id: 7,
+    type: 'dsa',
+    title: '1768. Merge Strings Alternately( Leetcode Easy)',
+    artist: 'LeetCode',
+    album: 'DSA Problem Solutions',
+    duration: '15 min video',
+    category: 'DSA',
+    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=400&fit=crop',
+    link: 'https://autonomousedgeintelligence.notion.site/796-Rotate-String-2dc8af91f3af803e8677f7dfa6911e6b'
+  },
 ];
 
 export const personalityData = [

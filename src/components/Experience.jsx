@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from './ui/card';
-import { ArrowLeft, Building, Calendar, MapPin, TrendingUp, Award } from 'lucide-react';
+import { ArrowLeft, Building, Calendar, MapPin, TrendingUp, Award, Github } from 'lucide-react';
 import { experienceData } from '../data/mock';
 import { Button } from './ui/button';
 
@@ -92,6 +92,24 @@ const Experience = ({ setActiveSection }) => {
                         </li>
                       ))}
                     </ul>
+                  </div>
+                )}
+
+                {exp.github && (
+                  <div className="mt-4">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Github size={18} className="text-spotify-green" />
+                      <h4 className="text-white font-semibold">Project Links</h4>
+                    </div>
+                    <a
+                      href={exp.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-spotify-green hover:text-green-400 transition-colors underline"
+                    >
+                      <Github size={16} />
+                      View Project on GitHub
+                    </a>
                   </div>
                 )}
               </div>

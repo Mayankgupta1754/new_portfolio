@@ -152,40 +152,44 @@ export const skillsData = {
 
 export const experienceData = [
   {
-    id: 1,
-    company: 'PROJFUEL - IT solutions Agency',
-    position: 'Data Science Intern',
-    duration: 'June 2025 - July 2025',
-    location: 'On - site',
-    description: 'Completed a one-month Data Science internship involving EDA, preprocessing, and ML tasks.',
-    achievements:[
-  "Successfully completed a full-time on-site Data Science Internship at ProjFuel",
-  "Worked on real-world data involving cleaning, preprocessing, EDA, and model implementation",
-  "Collaborated closely with Data Engineering and Product teams to align technical outputs with business goals",
-  "Maintained structured documentation and followed professional coding standards including PEP-8 and version control workflows",
-  "Delivered final project findings and recommendations to the team during scheduled presentations"
-],
-    certificates: [
-      { title: 'Internship Certificate', link: 'https://drive.google.com/file/d/1example/view?usp=sharing' }
-    ]
-
-  },
+  id: 1,
+  company: 'PROJFUEL - IT Solutions Agency',
+  position: 'Data Science Intern',
+  duration: 'June 2025 - July 2025',
+  location: 'On-site',
+  description: 'Completed a one-month Data Science internship working on end-to-end ML and computer vision solutions.',
+  achievements: [
+    "Acquired and delivered a client-based AI face recognition attendance system with real-time automated logging",
+    "Built an end-to-end computer vision pipeline using Python and OpenCV for image capture, model training, and live inference",
+    "Performed data cleaning, preprocessing, EDA, and implemented ML models on real-world datasets",
+    "Generated structured attendance reports with a user-friendly desktop interface for automated and manual tracking",
+    "Maintained professional documentation and followed version control"
+  ],
+  certificates: [
+    { title: 'Offer Letter', link: 'https://drive.google.com/file/d/1x4SGywdtbhS3viFBlbzau9Q4WSFPmGo2/view?usp=sharing' },
+    { title: 'Internship Certificate', link: 'https://drive.google.com/file/d/1bDjlCTgQPH9j-mSKCNUTgrMTsC6T682-/view?usp=sharing' }
+  ],
+  github: 'https://github.com/Mayankgupta1754/attendance_management'
+},
   {
     id: 2,
     company: 'Pantech Solutions',
     position: 'AI & Machine Learning Intern',
     duration: 'Dec 2023 - March 2024',
     location: 'Remote',
-    description: 'Worked on hands-on projects across AI, Machine Learning, Deep Learning, and Data Science, focusing on real-world datasets and practical problem-solving.',
+    description: 'Worked on hands-on projects across AI, Machine Learning, and Python, focusing on real-world datasets and practical problem-solving.',
     achievements: [
-      'Completed 25+ projects across AI, ML, and Data Science',
+      'Completed 25+ projects across AI, ML, and Python',
       'Gained strong practical exposure to real-world datasets',
       'Improved understanding of end-to-end ML workflows'
     ],
     certificates: [
-      { title: 'AI/ML Internship Certificate', link: 'https://example.com/cert2' },
-      { title: 'Offer Letter', link: 'https://example.com/offer2' }
-    ]
+      { title: 'AI Certificate', link: 'https://drive.google.com/file/d/1h1eSsy75vcpiTY5kCMRu5l4KGhW9274l/view' },
+      { title: 'ML Certificate', link: 'https://drive.google.com/file/d/1Pf4ETUJ2I1IjZXCMFA4iWJDXjan214kD/view' },
+      { title: 'Python Certificate', link: 'https://drive.google.com/file/d/1KOPyWCn8y9QM7BAoBRWwrhJzCsh3pius/view' },
+      { title: 'Offer Letter', link: 'https://drive.google.com/file/d/1bdy6HtORPLVUHKqvv3de1P5_vDiBR9KN/view?usp=sharing&usp=embed_facebook' }
+    ],
+    github: 'https://github.com/dummy/pantech-projects'
   },
   {
     id: 3,
@@ -199,9 +203,7 @@ export const experienceData = [
       'Conducted workshops on Git, ML, and AI fundamentals',
       'Organized and led technical events and sessions'
     ],
-    certificates: [
-      { title: 'Leadership Certificate', link: 'https://example.com/cert3' }
-    ]
+    certificates: []
   }
 ];
 

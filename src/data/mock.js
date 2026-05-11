@@ -50,8 +50,8 @@ export const projectsData = [
     technologies: ['Power BI', 'SQL', 'Microsoft SQL Server', 'MySQL', 'DAX', 'Data Modeling'],
     category: 'Data Analytics',
     image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop',
-    link: '#',
-    github: '#'
+    link: 'https://autonomousedgeintelligence.notion.site/Power-Bi-Project-Datasource-MYSQL-Database-SQL-Server-3338af91f3af80e4a1efd54457701cab',
+    github: 'https://autonomousedgeintelligence.notion.site/Power-Bi-Project-Datasource-MYSQL-Database-SQL-Server-3338af91f3af80e4a1efd54457701cab'
   },
   {
     id: 3,
@@ -60,8 +60,8 @@ export const projectsData = [
     technologies: ['Power BI', 'Snowflake', 'AWS S3', 'SQL', 'Data Pipeline', 'Cloud Analytics'],
     category: 'Data Analytics',
     image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop',
-    link: '#',
-    github: '#'
+    link: 'https://autonomousedgeintelligence.notion.site/End-to-End-Data-Pipeline-Analytics-using-AWS-S3-Snowflake-Power-BI-3358af91f3af80fda1e7ce48e05a79a9?pvs=73',
+    github: 'https://autonomousedgeintelligence.notion.site/End-to-End-Data-Pipeline-Analytics-using-AWS-S3-Snowflake-Power-BI-3358af91f3af80fda1e7ce48e05a79a9?pvs=73'
   },
   {
     id: 4,

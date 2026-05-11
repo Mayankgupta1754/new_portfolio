@@ -1,7 +1,7 @@
 export const profileData = {
   name: 'Mayank Gupta',
-  title: 'Debugging life, one dataset at a time.',
-  tagline: 'A curated space showcasing my journey, my work, and the ideas I\'m bringing to life.',
+  title: 'Data Analyst | Turning data into decisions.',
+  tagline: 'A curated space showcasing the dashboards, insights, and stories I bring to life from raw data.',
   profileImage: 'https://customer-assets.emergentagent.com/job_6e45107b-7f1c-49cf-95db-7b815b8d2de1/artifacts/6hw1f7ll_1736653887401.jpg',
   email: 'themayankgupta17@gmail.com',
   social: {
@@ -9,39 +9,52 @@ export const profileData = {
     linkedin: 'https://www.linkedin.com/in/mayank-gupta-218636253/',
     email: 'mailto:themayankgupta17@gmail.com'
   },
-  resumeUrl: 'https://drive.google.com/file/d/1S_DvyNiNvdtr1lTGxfcB1tcUV604IL_R/view?usp=sharing'
+  resumeUrl: 'https://drive.google.com/file/d/17RK8MXgW-0BzkIkVj3oZUEPt7_AKY-gx/view?usp=sharing'
 };
 
 export const aboutData = {
-  bio: 'B.Tech Computer Science student at VIT Vellore with a strong focus on Data Science, Data Analytics, Machine Learning, and AI, and a growing interest in Ethical Hacking. I build data-driven and intelligent systems using real-world datasets, while actively exploring security concepts to understand how systems can be designed to be both smart and secure. Passionate about hands-on learning, problem-solving, and developing solutions that go beyond academic theory.',
+  bio: 'B.Tech Computer Science student at VIT Vellore specializing in Data Analytics and Business Intelligence. I transform raw, messy data into clear, actionable insights through SQL, Python, Power BI, and Tableau — combining strong statistical fundamentals, EDA, and storytelling to drive better decisions. I also bring a working foundation in Machine Learning and AI, allowing me to push analytics beyond reporting into prediction and automation when needed.',
   highlights: [
-    'Built 25+ AI/ML projects using real-world datasets',
-    'Strong experience in EDA, feature engineering, and predictive modeling',
-    'Hands-on work with ML integration in web and IoT systems',
-    'Mentored 250+ students through workshops and technical sessions',
-    'Hackathon winner and active tech community contributor'
+    'Built 25+ data analytics and ML projects on real-world datasets',
+    'Strong in SQL, Python, Power BI, Tableau, and Excel for end-to-end analysis',
+    'Hands-on with EDA, feature engineering, statistical analysis, and KPI dashboards',
+    'Skilled at translating business questions into measurable, data-backed answers',
+    'Mentored 250+ students through workshops on analytics and data storytelling'
   ],
-  interests: ['Data Science','Machine Learning',
-    'Deep Learning',
-    'Artificial Intelligence',
+  interests: [
     'Data Analytics',
-    'Ethical Hacking',
-    'Applied AI Systems']
+    'Business Intelligence',
+    'Data Visualization',
+    'SQL & Databases',
+    'Statistical Analysis',
+    'Machine Learning',
+    'Data Storytelling'
+  ]
 };
 
 export const projectsData = [
   {
     id: 1,
-    title: 'Autonomous Firefighting Robot',
-    description: 'A smart autonomous robot capable of detecting and extinguishing fire using sensors, computer vision, and real-time motor control.',
-    technologies: ['Python', 'OpenCV', 'Arduino', 'Raspberry Pi', 'Embedded Systems', 'Robotics'],
-    category: 'Robotics & AI',
-    image: 'assests/robot.jpg',
-    link: 'https://autonomousedgeintelligence.notion.site/Autonomous-Firefighting-Robot-with-Human-Detection-2658af91f3af80c19389ebb6b9198f52?pvs=74',
-    github: 'https://autonomousedgeintelligence.notion.site/Autonomous-Firefighting-Robot-with-Human-Detection-2658af91f3af80c19389ebb6b9198f52?pvs=74'
+    title: 'Retail Sales Analytics Dashboard',
+    description: 'An end-to-end Power BI dashboard surfacing retail performance, category trends, and KPI movements. Modelled the data, wrote DAX measures, and designed visuals tuned for fast executive decision-making.',
+    technologies: ['Power BI', 'DAX', 'Power Query', 'Data Modeling', 'Data Visualization'],
+    category: 'Data Analytics',
+    image: '/assests/dash.jpg',
+    link: 'https://autonomousedgeintelligence.notion.site/Retail-Sales-Analysis-Dashboard-with-Power-BI-26e8af91f3af8063bf4ffaad22916c5a?pvs=74',
+    github: 'https://autonomousedgeintelligence.notion.site/Retail-Sales-Analysis-Dashboard-with-Power-BI-26e8af91f3af8063bf4ffaad22916c5a?pvs=74'
   },
   {
     id: 2,
+    title: 'Suspicious Web Threat Interaction Analysis',
+    description: 'Behavioral data analysis on web traffic logs to flag suspicious interactions. Built the full pipeline — cleaning, EDA, feature engineering, and visualization — to extract patterns that signal threats.',
+    technologies: ['Python', 'Pandas', 'NumPy', 'EDA', 'Data Visualization', 'Statistical Analysis'],
+    category: 'Data Analytics',
+    image: '/assests/cyber.jpg',
+    link: 'https://autonomousedgeintelligence.notion.site/Cybersecurity-Suspicious-Web-Threat-Interactions-26d8af91f3af80ddb300d26de3dfce23?pvs=74',
+    github: 'https://www.kaggle.com/code/mayankgupta17/cybersecurity-suspicious-web-threat-interactions'
+  },
+  {
+    id: 3,
     title: 'CyberJett – NLP-Based Voice Assistant',
     description: 'A voice-controlled AI assistant built using NLP and deep learning, capable of understanding intents, responding via speech, and controlling hardware through Arduino.',
     technologies: ['Python', 'NLP', 'TensorFlow', 'Keras', 'Arduino', 'Speech Recognition'],
@@ -51,24 +64,14 @@ export const projectsData = [
     github: 'https://github.com/Mayankgupta1754/CyberJett_Voice_Based_AI_Assistant'
   },
   {
-    id: 3,
-    title: 'Suspicious Web Threat Interaction Analysis',
-    description: 'A cybersecurity-focused data analysis project aimed at identifying suspicious web interactions and potential threats through behavioral patterns.',
-    technologies: ['Python', 'Pandas', 'NumPy', 'Cyber Security', 'Data Analysis'],
-    category: 'Cyber Security',
-    image: '/assests/cyber.jpg',
-    link: 'https://autonomousedgeintelligence.notion.site/Cybersecurity-Suspicious-Web-Threat-Interactions-26d8af91f3af80ddb300d26de3dfce23?pvs=74',
-    github: 'https://www.kaggle.com/code/mayankgupta17/cybersecurity-suspicious-web-threat-interactions'
-  },
-  {
     id: 4,
-    title: 'Retail Sales Analytics Dashboard',
-    description: 'An interactive Power BI dashboard providing insights into retail sales performance, trends, and key business metrics for decision-making.',
-    technologies: ['Power BI', 'Data Analytics', 'DAX', 'Data Visualization'],
-    category: 'Data Analytics',
-    image: '/assests/dash.jpg',
-    link: 'https://autonomousedgeintelligence.notion.site/Retail-Sales-Analysis-Dashboard-with-Power-BI-26e8af91f3af8063bf4ffaad22916c5a?pvs=74',
-    github: 'https://autonomousedgeintelligence.notion.site/Retail-Sales-Analysis-Dashboard-with-Power-BI-26e8af91f3af8063bf4ffaad22916c5a?pvs=74'
+    title: 'Autonomous Firefighting Robot',
+    description: 'A smart autonomous robot capable of detecting and extinguishing fire using sensors, computer vision, and real-time motor control.',
+    technologies: ['Python', 'OpenCV', 'Arduino', 'Raspberry Pi', 'Embedded Systems', 'Robotics'],
+    category: 'Robotics & AI',
+    image: 'assests/robot.jpg',
+    link: 'https://autonomousedgeintelligence.notion.site/Autonomous-Firefighting-Robot-with-Human-Detection-2658af91f3af80c19389ebb6b9198f52?pvs=74',
+    github: 'https://autonomousedgeintelligence.notion.site/Autonomous-Firefighting-Robot-with-Human-Detection-2658af91f3af80c19389ebb6b9198f52?pvs=74'
   },
   {
     id: 5,
@@ -95,58 +98,56 @@ export const projectsData = [
 
 export const skillsData = {
   technical: [
+    { name: 'Data Analytics', level: 92 },
+    { name: 'SQL', level: 88 },
+    { name: 'Power BI', level: 88 },
+    { name: 'Tableau', level: 82 },
+    { name: 'Excel', level: 90 },
     { name: 'Python', level: 90 },
-    { name: 'Java', level: 85 },
-    { name: 'Machine Learning', level: 88 },
-    { name: 'Data Analytics', level: 80 },
-    { name: 'Data Science', level: 85 },
-    { name: 'Deep Learning', level: 78 },
-    { name: 'Artificial Intelligence', level: 70 },
-    { name: 'Ethical Hacking', level: 75 }
+    { name: 'Statistical Analysis', level: 80 },
+    { name: 'Machine Learning', level: 82 }
   ],
     tools: [
-  'Python',
-  'Java',
   'SQL',
+  'Power BI',
+  'Tableau',
+  'Excel',
+  'Python',
   'Pandas',
   'NumPy',
-  'Scikit-learn',
   'Data Cleaning',
   'Data Visualization',
+  'EDA',
+  'Statistical Analysis',
+  'Hypothesis Testing',
+  'Feature Engineering',
+  'DAX',
+  'Power Query',
   'Matplotlib',
   'Seaborn',
   'Plotly',
-  'Statistical Analysis',
-  'Hypothesis Testing',
-  'EDA',
-  'Feature Engineering',
-  'TensorFlow',
-  'Keras',
-  'PyTorch',
-  'OpenCV',
-  'MediaPipe',
-  'Tableau',
-  'Power BI',
-  'Excel',
+  'Scikit-learn',
   'Model Evaluation',
   'Cross-Validation',
   'Hyperparameter Tuning',
-  'Git',
-  'GitHub',
-  'Linux',
-  'Raspberry Pi',
-  'Arduino',
-  'IoT Sensors',
-  'Ethical Hacking (Fundamentals)',
+  'A/B Testing',
+  'KPI Reporting',
+  'Dashboarding',
+  'Data Storytelling',
   'Jupyter Notebook',
   'Google Colab',
   'VS Code',
-  'Kaggle'
+  'Git',
+  'GitHub',
+  'Kaggle',
+  'Java',
+  'TensorFlow',
+  'Keras'
 ],
 
   softSkills: [
-    'Problem Solving', 'Team Leadership', 'Communication',
-    'Project Management', 'Research', 'Mentoring'
+    'Problem Solving', 'Communication', 'Data Storytelling',
+    'Stakeholder Management', 'Critical Thinking', 'Mentoring'
   ]
 };
 
@@ -238,196 +239,62 @@ export const educationData = [
   }
 ];
 
-export const knowledgeSharingData = [
+export const blogData = [
   {
-    id: 1,
-    type: 'dsa',
-    title: '796. Rotate String - Leetcode Easy',
-    artist: 'LeetCode',
-    album: 'DSA Problem Solutions',
-    duration: '12 min read',
-    category: 'DSA',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=400&fit=crop',
-    link: 'https://autonomousedgeintelligence.notion.site/796-Rotate-String-2dc8af91f3af803e8677f7dfa6911e6b'
-  },
-  {
-    id: 6,
-    type: 'dsa',
-    title: '242. Valid Anagram - Leetcode Easy',
-    artist: 'LeetCode',
-    album: 'DSA Problem Solutions',
-    duration: '10 min read',
-    category: 'DSA',
-    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&h=400&fit=crop',
-    link: 'https://autonomousedgeintelligence.notion.site/242-Valid-Anagram-2dd8af91f3af80708ec8c861b881251a?pvs=74'
-  },
-  {
-    id: 2,
-    type: 'Ethical Hacking',
-    title: 'Ethical HAcking learnings',
-    artist: 'Zsecurity',
-    album: 'Ethical hacing tutorials',
-    duration: '15 hr',
-    category: 'Ethical Hacking',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=400&fit=crop',
+    id: 4,
+    title: 'Ethical Hacking Learnings',
+    subtitle: 'Notes from ZSecurity course',
+    category: 'Cyber Security',
+    readTime: '15 hrs',
+    date: '2024',
+    cover: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=600&fit=crop',
+    color: 'from-red-500 to-pink-500',
     link: 'https://autonomousedgeintelligence.notion.site/Ethical-Hacking-2cd8af91f3af8087913fc28a79e5253f'
   },
   {
-    id: 3,
-    type: 'Data Science',
-    title: 'Data Science learnings',
-    artist: 'Udemy',
-    album: 'Data Science Notes',
-    duration: '85 hrs',
-    category: 'Study Notes',
-    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&h=400&fit=crop',
+    id: 5,
+    title: 'Data Science Deep Dive',
+    subtitle: 'Comprehensive notes from Udemy course',
+    category: 'Data Science',
+    readTime: '85 hrs',
+    date: '2024',
+    cover: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=600&fit=crop',
+    color: 'from-blue-500 to-cyan-500',
     link: 'https://autonomousedgeintelligence.notion.site/Data-Scientist-26a8af91f3af802f8249f82eaed4cc59?pvs=74'
   },
   {
-    id: 4,
-    type: 'Cheat Sheets',
-    title: 'Cheat Sheets Compilation',
-    artist: 'Notes',
-    album: 'cheat sheets',
-    duration: '50 hrs',
-    category: 'Cheat sheets',
-    image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=400&fit=crop',
+    id: 6,
+    title: 'The Ultimate Cheat Sheets',
+    subtitle: 'My curated reference compilation',
+    category: 'Reference',
+    readTime: '50 hrs',
+    date: '2024',
+    cover: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=600&fit=crop',
+    color: 'from-yellow-500 to-orange-500',
     link: 'https://autonomousedgeintelligence.notion.site/Cheat-Sheets-2608af91f3af80a5b3bdf5ded89621fb'
   },
   {
-    id: 5,
-    type: 'Data Analytics',
-    title: 'Data Analytics Learnings',
-    artist: 'Course Learnings',
-    album: 'course learnings',
-    duration: '95 hrs',
-    category: 'Tutorial',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=400&fit=crop',
+    id: 7,
+    title: 'Data Analytics Mastery',
+    subtitle: 'Course learnings & practical insights',
+    category: 'Data Analytics',
+    readTime: '95 hrs',
+    date: '2024',
+    cover: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=600&fit=crop',
+    color: 'from-purple-500 to-violet-500',
     link: 'https://autonomousedgeintelligence.notion.site/Data-Analyst-24c8af91f3af80ed8c2be839d3ba4751'
   },
   {
-    id: 7,
-    type: 'dsa',
-    title: '1768. Merge Strings Alternately( Leetcode Easy)',
-    artist: 'LeetCode',
-    album: 'DSA Problem Solutions',
-    duration: '15 min video',
-    category: 'DSA',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=400&fit=crop',
-    link: 'https://autonomousedgeintelligence.notion.site/796-Rotate-String-2dc8af91f3af803e8677f7dfa6911e6b'
-  },
-];
-
-export const personalityData = [
-   
-  {
-  id: 2,
-  title: 'Music Lover',
-  category: 'Music',
-  description: 'I enjoy listening to modern genres and curating playlists that match different moods, moments, and focus sessions. Music is my go-to way to relax and stay inspired.',
-  tags: [
-    'Playlist Curation',
-    'Modern Music',
-    'Genre Exploration',
-    'Mood-Based Music',
-    'Jamming & Relaxation'
-  ],
-  favoriteQuote: '"Where words fail, music speaks." - Hans Christian Andersen',
-  personalStory: 'Music has always been part of my daily routine—whether it’s focus playlists while coding or late-night jamming sessions. I enjoy discovering new artists and organizing songs into playlists that match different vibes.',
-  goalsAndAspirations: 'Keep exploring new music, curate better playlists, and use music as a creative and calming outlet.',
-  image: '/assests/mayank.jpg'
-},
-  {
-  id: 3,
-  title: 'Car Enthusiast',
-  category: 'Automotive',
-  description: 'Passionate about cars, automotive technology, and everything related to engines, design, and driving experiences.',
-  tags: [
-    'Car Design',
-    'Automotive Technology',
-    'Driving Enthusiast',
-    'Car Modifications',
-    'Motorsports'
-  ],
-  favoriteQuote: '"It\'s not just a car, it\'s a way of life."',
-  personalStory: 'I have always been fascinated by cars, from their design to the engineering behind them. I enjoy learning about new models, attending auto shows, and exploring performance tuning.',
-  goalsAndAspirations: 'To deepen my knowledge of automotive technology, experiment with car modifications, and experience motorsports firsthand.',
-  image: '/assests/car.jpg'
-},
-{
-    id: 1,
-    title: 'Gaming Enthusiast',
-    category: 'Gaming',
-    description: 'Passionate about competitive and strategy-based gaming, with a strong interest in tactical decision-making, teamwork, and continuous improvement. I enjoy exploring game mechanics, mastering strategies, and being part of active gaming communities.',
-    tags: ['Competitive Gaming (Valorant)',
-  'Strategy & Tactical Play',
-  'Team Coordination & Game Sense',
-  'Mind Games (Sudoku, Elevate)',
-  'Gaming Communities',
-  'Esports Culture'],
-    favoriteQuote: '"Games are the most elevated form of investigation." - Albert Einstein',
-    personalStory: 'My gaming journey began with casual and puzzle games and gradually evolved into competitive multiplayer gaming. Titles like Valorant sharpened my strategic thinking, communication, and adaptability under pressure—skills that naturally translate into my tech and problem-solving mindset.',
-    goalsAndAspirations: 'Explore game development while experimenting with AI-driven gameplay, intelligent agents, and educational gaming content.',
-    image: '/assests/gaming.jpg'
-  },
-
-  {
-  id: 4,
-  title: 'Animal Lover',
-  category: 'Pets & Animals',
-  description: 'I enjoy taking care of pets and helping stray animals. Passionate about animal welfare and creating a safe environment for them.',
-  tags: [
-    'Pet Care',
-    'Animal Welfare',
-    'Stray Animal Rescue',
-    'Volunteering',
-    'Compassion & Empathy'
-  ],
-  favoriteQuote: '"The greatness of a nation and its moral progress can be judged by the way its animals are treated." - Mahatma Gandhi',
-  personalStory: 'I have always loved animals and spend time caring for pets and helping stray animals whenever possible. Whether it’s feeding, rescuing, or just spending time with them, I find joy and fulfillment in being around animals.',
-  goalsAndAspirations: 'To continue helping stray animals and raise awareness about animal welfare, while providing loving care to pets.',
-  image: '/assests/animal.jpeg'
-}
-,
-  {
-  id: 5,
-  title: 'Swimming Enthusiast',
-  category: 'Sports & Fitness',
-  description: 'Swimming is my way to stay fit, relax, and challenge myself physically and mentally. I enjoy both casual swims and competitive techniques.',
-  tags: [
-    'Swimming',
-    'Endurance Training',
-    'Fitness & Health',
-    'Water Sports',
-    'Personal Challenge'
-  ],
-  favoriteQuote: '"Just keep swimming." - Dory, Finding Nemo',
-  personalStory: 'I started swimming as a way to stay active and quickly fell in love with the sport. It teaches discipline, patience, and helps me clear my mind.',
-  goalsAndAspirations: 'To improve my swimming techniques, participate in local competitions, and maintain it as a regular fitness routine.',
-  image: '/assests/swim.jpg'
-},
-  {
-    id: 6,
-    title: 'Ethical Hacker',
-    category: 'Cyber Security',
-    description: 'Dedicated to understanding system vulnerabilities and promoting secure digital practices.',
-    tags: ['Network Security', 'Penetration Testing', 'Linux', 'Cryptography'],
-    favoriteQuote: '"The best defense is a good offense." - Unknown',
-    personalStory: 'My interest in cybersecurity sparked when I learned about data breaches and their impact. I started learning ethical hacking techniques and now focus on helping organizations secure their systems.',
-    goalsAndAspirations: 'To become a certified ethical hacker and work with organizations to improve their security posture. I want to educate others about cybersecurity best practices and contribute to secure software development.',
-    image: '/assests/hack.jpg'
-  },
-  {
-    id: 7,
-  title: 'Audio Book Reader',
-  category: 'Reading',
-  description: 'Passionate about audiobooks, using Headway to read books and note down important learnings.',
-  tags: ['Audiobooks', 'Reading', 'Learning', 'Headway', 'Knowledge'],
-  favoriteQuote: '"The more that you read, the more things you will know. The more that you learn, the more places you\'ll go." - Dr. Seuss',
-  personalStory: 'I use Headway to immerse myself in audiobooks, allowing me to learn on the go while noting down key insights and takeaways.',
-  goalsAndAspirations: 'To continue expanding my knowledge through audiobooks and apply the learnings in my daily life and work.',
-  image: '/assests/book.jpg'
-}
+    id: 8,
+    title: 'CyberJett — Voice AI Assistant',
+    subtitle: 'Project deep-dive: NLP + Hardware integration',
+    category: 'Project Notes',
+    readTime: '20 min',
+    date: '2024',
+    cover: 'https://images.unsplash.com/photo-1589254065878-42c9da997008?w=600&h=600&fit=crop',
+    color: 'from-green-500 to-emerald-500',
+    link: 'https://cyberjettvoiceassistant.notion.site/CyberJett-Voice-Based-AI-Assistant-24291bf37816802d8e8ef6ad00f0b2ae'
+  }
 ];
 
 export const certificatesData = [

@@ -61,3 +61,217 @@ a:focus-visible {
 .fade-in {
     animation: fadeIn 0.5s ease-in-out;
 }
+
+/* ============================================
+   PREMIUM SPOTIFY ANIMATIONS
+   ============================================ */
+
+/* Animated mesh gradient background */
+@keyframes meshFloat {
+    0%, 100% {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+    33% {
+        transform: translate(3%, -2%) rotate(2deg);
+    }
+    66% {
+        transform: translate(-2%, 3%) rotate(-1deg);
+    }
+}
+
+@keyframes meshFloat2 {
+    0%, 100% {
+        transform: translate(0%, 0%) scale(1);
+    }
+    50% {
+        transform: translate(-4%, 4%) scale(1.1);
+    }
+}
+
+.mesh-gradient {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.mesh-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.35;
+    will-change: transform;
+}
+
+.mesh-blob-1 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, #1DB954 0%, transparent 70%);
+    top: -10%;
+    left: -10%;
+    animation: meshFloat 18s ease-in-out infinite;
+}
+
+.mesh-blob-2 {
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);
+    top: 30%;
+    right: -10%;
+    animation: meshFloat2 22s ease-in-out infinite;
+}
+
+.mesh-blob-3 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #ec4899 0%, transparent 70%);
+    bottom: -10%;
+    left: 30%;
+    animation: meshFloat 25s ease-in-out infinite reverse;
+}
+
+/* Spotify card lift + glow on hover */
+.spotify-card-lift {
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 0.25s ease;
+}
+
+.spotify-card-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(29, 185, 84, 0.18),
+                0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Play button pulse glow */
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(29, 185, 84, 0.6),
+                    0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 12px rgba(29, 185, 84, 0),
+                    0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.play-pulse {
+    animation: pulseGlow 1.8s ease-out infinite;
+}
+
+/* Shine sweep across album art on hover */
+.shine-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        110deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.15) 50%,
+        transparent 70%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+}
+
+.group:hover .shine-overlay {
+    transform: translateX(100%);
+}
+
+/* Equalizer bars (now playing indicator) */
+@keyframes eqBar {
+    0%, 100% { height: 25%; }
+    50% { height: 100%; }
+}
+
+.eq-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 16px;
+}
+
+.eq-bar {
+    width: 3px;
+    background: #1DB954;
+    border-radius: 2px;
+    animation: eqBar 0.9s ease-in-out infinite;
+}
+
+.eq-bar:nth-child(1) { animation-delay: 0s; }
+.eq-bar:nth-child(2) { animation-delay: 0.2s; }
+.eq-bar:nth-child(3) { animation-delay: 0.4s; }
+.eq-bar:nth-child(4) { animation-delay: 0.15s; }
+
+/* Animated gradient text */
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #1DB954, #ffffff, #1DB954);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 4s ease-in-out infinite;
+}
+
+/* Cursor blink for typing */
+@keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background: #1DB954;
+    margin-left: 4px;
+    vertical-align: text-bottom;
+    animation: blink 1s steps(1) infinite;
+}
+
+/* Border-trace glow on hover (portal cards) */
+.border-trace {
+    position: relative;
+    isolation: isolate;
+}
+
+.border-trace::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: conic-gradient(
+        from var(--angle, 0deg),
+        transparent 70%,
+        #1DB954 85%,
+        transparent 100%
+    );
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.border-trace:hover::before {
+    opacity: 1;
+    animation: rotateBorder 2s linear infinite;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotateBorder {
+    to { --angle: 360deg; }
+}

@@ -60,14 +60,14 @@ const CircularSkill = ({ skill, index, icon: Icon, color }) => {
         scale={1.04}
         transitionSpeed={1500}
       >
-        <Card className="relative bg-spotify-card border-none p-6 overflow-hidden spotify-card-lift group">
+        <Card className="relative bg-spotify-card border-none p-3 sm:p-6 overflow-hidden spotify-card-lift group">
           <div
             className={`absolute -top-10 -right-10 w-32 h-32 rounded-full bg-gradient-to-br ${color} opacity-20 blur-2xl group-hover:opacity-40 transition-opacity duration-500`}
           />
           <div className="relative flex flex-col items-center">
-            <div className="relative w-32 h-32 mb-3">
+            <div className="relative w-28 h-28 sm:w-32 sm:h-32 mb-3">
               {/* Background ring */}
-              <svg className="w-full h-full -rotate-90">
+              <svg viewBox="0 0 128 128" className="w-full h-full -rotate-90">
                 <circle
                   cx="64"
                   cy="64"

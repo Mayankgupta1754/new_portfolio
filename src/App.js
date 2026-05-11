@@ -80,7 +80,7 @@ function App() {
         isMobileMenuOpen={isMobileMenuOpen}
         setIsMobileMenuOpen={setIsMobileMenuOpen}
       />
-      <main className="lg:ml-72 transition-all duration-300">
+      <main className="lg:ml-72 pt-14 lg:pt-0 transition-all duration-300">
         {renderSection()}
       </main>
     </div>

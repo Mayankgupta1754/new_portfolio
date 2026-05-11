@@ -245,7 +245,7 @@ const Achievements = ({ setActiveSection }) => {
             transitionSpeed={2000}
             tiltReverse={false}
           >
-            <Card className="relative bg-gradient-to-br from-spotify-card via-[#1a1a1a] to-spotify-card border-none p-8 overflow-hidden shadow-2xl">
+            <Card className="relative bg-gradient-to-br from-spotify-card via-[#1a1a1a] to-spotify-card border-none p-5 sm:p-8 overflow-hidden shadow-2xl">
               {/* Glow border that follows currentType */}
               <motion.div
                 key={`glow-${currentAchievement}`}
@@ -257,9 +257,9 @@ const Achievements = ({ setActiveSection }) => {
                 }}
               />
 
-              <div className="relative flex flex-col md:flex-row gap-8 items-center md:items-start">
+              <div className="relative flex flex-col md:flex-row gap-6 sm:gap-8 items-center md:items-start">
                 {/* 3D Album Cover with Vinyl */}
-                <div className="flex-shrink-0 relative w-80 h-80" style={{ perspective: '1000px' }}>
+                <div className="flex-shrink-0 relative w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80" style={{ perspective: '1000px' }}>
                   {/* Vinyl record - peeks out from behind the album cover */}
                   <motion.div
                     animate={{
@@ -274,7 +274,7 @@ const Achievements = ({ setActiveSection }) => {
                       },
                       x: { duration: 0.6, ease: [0.4, 0, 0.2, 1] }
                     }}
-                    className="absolute top-0 left-0 w-80 h-80 rounded-full pointer-events-none"
+                    className="absolute top-0 left-0 w-full h-full rounded-full pointer-events-none"
                     style={{
                       background: 'radial-gradient(circle, #000 0%, #1a1a1a 40%, #000 50%, #1a1a1a 60%, #000 100%)',
                       boxShadow: '0 0 40px rgba(29, 185, 84, 0.25), inset 0 0 60px rgba(0,0,0,0.8)',
@@ -304,7 +304,7 @@ const Achievements = ({ setActiveSection }) => {
                   </motion.div>
 
                   {/* Album cover with flip transition */}
-                  <div className="relative w-80 h-80" style={{ zIndex: 2 }}>
+                  <div className="relative w-full h-full" style={{ zIndex: 2 }}>
                     <AnimatePresence mode="wait" custom={direction}>
                       <motion.div
                         key={currentAchievement}

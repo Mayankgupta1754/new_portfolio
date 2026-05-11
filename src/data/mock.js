@@ -36,8 +36,8 @@ export const projectsData = [
   {
     id: 1,
     title: 'Retail Sales Analytics Dashboard',
-    description: 'An end-to-end Power BI dashboard surfacing retail performance, category trends, and KPI movements. Modelled the data, wrote DAX measures, and designed visuals tuned for fast executive decision-making.',
-    technologies: ['Power BI', 'DAX', 'Power Query', 'Data Modeling', 'Data Visualization'],
+    description: 'Interactive Power BI dashboard analyzing sales, profit, and order trends — with custom metrics like Net Sales and Profit Margin, dynamic filtering by product, region, and time, and insights that surface top/bottom performers to guide pricing and discount strategy.',
+    technologies: ['Power BI', 'SQL', 'Excel', 'DAX', 'Data Cleaning', 'Data Visualization'],
     category: 'Data Analytics',
     image: '/assests/dash.jpg',
     link: 'https://autonomousedgeintelligence.notion.site/Retail-Sales-Analysis-Dashboard-with-Power-BI-26e8af91f3af8063bf4ffaad22916c5a?pvs=74',
@@ -45,6 +45,26 @@ export const projectsData = [
   },
   {
     id: 2,
+    title: 'Inventory Demand & Supply Analysis',
+    description: 'End-to-end analytics pipeline tracking demand, availability, and revenue impact. Built interactive Power BI dashboards exposing KPIs like demand, supply shortage, profit, and loss, with DAX measures (Average Demand, Total Loss) and SQL-based cleaning, joins, and validation ensuring data accuracy across environments.',
+    technologies: ['Power BI', 'SQL', 'Microsoft SQL Server', 'MySQL', 'DAX', 'Data Modeling'],
+    category: 'Data Analytics',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop',
+    link: '#',
+    github: '#'
+  },
+  {
+    id: 3,
+    title: 'Agriculture Data Analytics Pipeline & Dashboard',
+    description: 'End-to-end cloud data pipeline integrating AWS S3, Snowflake, and Power BI for agricultural data analysis. Performed cleaning, transformation, and feature engineering in Snowflake SQL, then built interactive Power BI dashboards tracking rainfall, temperature, humidity, and yield trends — all profiled and validated for accuracy.',
+    technologies: ['Power BI', 'Snowflake', 'AWS S3', 'SQL', 'Data Pipeline', 'Cloud Analytics'],
+    category: 'Data Analytics',
+    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop',
+    link: '#',
+    github: '#'
+  },
+  {
+    id: 4,
     title: 'Suspicious Web Threat Interaction Analysis',
     description: 'Behavioral data analysis on web traffic logs to flag suspicious interactions. Built the full pipeline — cleaning, EDA, feature engineering, and visualization — to extract patterns that signal threats.',
     technologies: ['Python', 'Pandas', 'NumPy', 'EDA', 'Data Visualization', 'Statistical Analysis'],
@@ -54,7 +74,7 @@ export const projectsData = [
     github: 'https://www.kaggle.com/code/mayankgupta17/cybersecurity-suspicious-web-threat-interactions'
   },
   {
-    id: 3,
+    id: 5,
     title: 'CyberJett – NLP-Based Voice Assistant',
     description: 'A voice-controlled AI assistant built using NLP and deep learning, capable of understanding intents, responding via speech, and controlling hardware through Arduino.',
     technologies: ['Python', 'NLP', 'TensorFlow', 'Keras', 'Arduino', 'Speech Recognition'],
@@ -64,7 +84,7 @@ export const projectsData = [
     github: 'https://github.com/Mayankgupta1754/CyberJett_Voice_Based_AI_Assistant'
   },
   {
-    id: 4,
+    id: 6,
     title: 'Autonomous Firefighting Robot',
     description: 'A smart autonomous robot capable of detecting and extinguishing fire using sensors, computer vision, and real-time motor control.',
     technologies: ['Python', 'OpenCV', 'Arduino', 'Raspberry Pi', 'Embedded Systems', 'Robotics'],
@@ -74,7 +94,7 @@ export const projectsData = [
     github: 'https://autonomousedgeintelligence.notion.site/Autonomous-Firefighting-Robot-with-Human-Detection-2658af91f3af80c19389ebb6b9198f52?pvs=74'
   },
   {
-    id: 5,
+    id: 7,
     title: 'CamJett – Face Recognition Smart Door Lock',
     description: 'An intelligent door security system using face recognition for access control, integrated with hardware locking mechanisms and access logging.',
     technologies: ['Python', 'OpenCV', 'Raspberry Pi', 'Arduino', 'Computer Vision', 'IoT'],
@@ -84,7 +104,7 @@ export const projectsData = [
     github: '#'
   },
   {
-    id: 6,
+    id: 8,
     title: 'MAGIE – Manual Autonomous Gyro-Integrated Explorer',
     description: 'MAGIE is a dual-mode autonomous robot designed for fire evacuation and hazard monitoring, capable of navigating uneven terrain while detecting humans, animals, and potential fire risks in dangerous environments.',
     technologies: ['Python', 'OpenCV', 'Raspberry Pi' , 'Computer Vision', 'IoT', 'ReactJS'],

@@ -64,6 +64,16 @@ export const projectsData = [
     github: 'https://autonomousedgeintelligence.notion.site/End-to-End-Data-Pipeline-Analytics-using-AWS-S3-Snowflake-Power-BI-3358af91f3af80fda1e7ce48e05a79a9?pvs=73'
   },
   {
+    id: 9,
+    title: 'Banking Analytics Dashboard using SQL & Power BI',
+    description: 'End-to-end banking analytics project covering synthetic data generation, SQL cleaning, LEFT JOIN integration, Power Query transformations, and DAX KPI modeling to surface customer behavior, transaction activity, account performance, inactive accounts, and monthly financial trends.',
+    technologies: ['Power BI', 'SQL Server', 'SQL', 'Power Query', 'DAX', 'Data Cleaning'],
+    category: 'Data Analytics',
+    image: '/assests/banking-analytics-dashboard.png',
+    link: 'https://autonomousedgeintelligence.notion.site/Banking-Analytics-Dashboard-36b8af91f3af8086be37c014b4354da7',
+    github: 'https://github.com/Mayankgupta1754/Banking_Analytics_Dashboard'
+  },
+  {
     id: 4,
     title: 'Suspicious Web Threat Interaction Analysis',
     description: 'Behavioral data analysis on web traffic logs to flag suspicious interactions. Built the full pipeline — cleaning, EDA, feature engineering, and visualization — to extract patterns that signal threats.',

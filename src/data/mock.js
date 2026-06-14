@@ -246,7 +246,7 @@ export const educationData = [
     degree: 'Bachelor of Technology',
     field: 'Computer Science Engineering',
     duration: '2022 – Present',
-    gpa: '8.72',
+    gpa: '8.76',
     achievements: [
       'Active member of AI/ML and technical clubs',
       'Led multiple academic and personal projects',

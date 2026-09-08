@@ -1,12 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Home, FolderOpen, Award, Briefcase, GraduationCap, Mail, Download, Github, Linkedin, Menu, X, Trophy, User, BookOpen, Code2 } from 'lucide-react';
+import { Home, FolderOpen, Award, Briefcase, GraduationCap, Mail, Download, Github, Linkedin, Menu, X, Trophy, User, BookOpen, Code2, Bot, Search } from 'lucide-react';
 import { profileData } from '../data/mock';
 import { Button } from './ui/button';
 
-const Sidebar = ({ activeSection, setActiveSection, isMobileMenuOpen, setIsMobileMenuOpen }) => {
+const Sidebar = ({ activeSection, setActiveSection, isMobileMenuOpen, setIsMobileMenuOpen, onOpenSearch }) => {
   const navItems = [
     { id: 'home', label: 'Home', icon: Home },
+    { id: 'twin', label: 'Digital Twin', icon: Bot },
     { id: 'about', label: 'About Me', icon: User },
     { id: 'projects', label: 'Projects', icon: FolderOpen },
     { id: 'blog', label: 'My Playlists', icon: BookOpen },
@@ -118,6 +119,16 @@ const Sidebar = ({ activeSection, setActiveSection, isMobileMenuOpen, setIsMobil
             </span>
           </div>
         </motion.div>
+
+        <button
+          type="button"
+          onClick={onOpenSearch}
+          className="mb-4 w-full flex items-center gap-3 px-4 py-2.5 rounded-full bg-[#181818] text-gray-300 hover:text-white hover:bg-[#282828] transition-colors text-sm"
+        >
+          <Search size={16} className="text-spotify-green" />
+          <span className="flex-1 text-left">Search or ask twin</span>
+          <span className="hidden sm:inline text-[10px] text-gray-500 border border-gray-700 rounded px-1.5 py-0.5">⌘K</span>
+        </button>
 
         {/* Navigation */}
         <nav className="flex-1 overflow-y-auto">

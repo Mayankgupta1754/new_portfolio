@@ -68,6 +68,13 @@ const Home = ({ setActiveSection }) => {
       color: 'from-orange-500 to-red-600'
     },
     {
+      id: 'twin',
+      title: 'Digital Twin',
+      description: 'Ask my AI about my work',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=300&fit=crop',
+      color: 'from-emerald-500 to-green-700'
+    },
+    {
       id: 'about',
       title: 'About Me',
       description: 'Story behind the analyst',
@@ -111,6 +118,13 @@ const Home = ({ setActiveSection }) => {
       subtitle: 'Live code activity & repos',
       image: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=400&h=250&fit=crop',
       gradient: 'from-green-600 to-emerald-600'
+    },
+    {
+      id: 'twin',
+      title: 'Digital Twin',
+      subtitle: 'Chat with an AI version of me',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop',
+      gradient: 'from-emerald-600 to-teal-700'
     }
   ];
 
@@ -276,7 +290,7 @@ const Home = ({ setActiveSection }) => {
               <span className="eq-bar"></span>
             </span>
           </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {featuredSections.map((section) => (
               <motion.div key={section.id} variants={itemVariants}>
                 <Tilt

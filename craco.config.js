@@ -77,28 +77,74 @@ if (config.enableVisualEdits && babelMetadataPlugin) {
   };
 }
 
+function readJsonBody(req) {
+  if (req.body && typeof req.body === "object") {
+    return Promise.resolve(req.body);
+  }
+
+  return new Promise((resolve, reject) => {
+    let raw = "";
+    req.on("data", (chunk) => {
+      raw += chunk;
+      if (raw.length > 1_000_000) {
+        req.destroy();
+        reject(new Error("Payload too large"));
+      }
+    });
+    req.on("end", () => {
+      if (!raw) {
+        resolve({});
+        return;
+      }
+      try {
+        resolve(JSON.parse(raw));
+      } catch (error) {
+        reject(error);
+      }
+    });
+    req.on("error", reject);
+  });
+}
+
 webpackConfig.devServer = (devServerConfig) => {
-  // Apply visual edits dev server setup only if enabled
   if (config.enableVisualEdits && setupDevServer) {
     devServerConfig = setupDevServer(devServerConfig);
   }
 
-  // Add health check endpoints if enabled
-  if (config.enableHealthCheck && setupHealthEndpoints && healthPluginInstance) {
-    const originalSetupMiddlewares = devServerConfig.setupMiddlewares;
+  const previousSetup = devServerConfig.setupMiddlewares;
 
-    devServerConfig.setupMiddlewares = (middlewares, devServer) => {
-      // Call original setup if exists
-      if (originalSetupMiddlewares) {
-        middlewares = originalSetupMiddlewares(middlewares, devServer);
+  devServerConfig.setupMiddlewares = (middlewares, devServer) => {
+    if (previousSetup) {
+      middlewares = previousSetup(middlewares, devServer);
+    }
+
+    const { processTwinChat } = require("./api/lib/processTwinChat");
+
+    devServer.app.post("/api/twin", async (req, res) => {
+      try {
+        const payload = await readJsonBody(req);
+        const result = await processTwinChat(payload);
+        res.writeHead(result.status, { "Content-Type": "application/json" });
+        res.end(JSON.stringify(result.body));
+      } catch (error) {
+        const missingKey = error.code === "MISSING_API_KEY";
+        res.writeHead(missingKey ? 503 : 500, { "Content-Type": "application/json" });
+        res.end(
+          JSON.stringify({
+            error: missingKey
+              ? "Add OPENAI_API_KEY to .env.local in the project root, then restart npm start."
+              : "Twin is offline right now. Please try again shortly.",
+          })
+        );
       }
+    });
 
-      // Setup health endpoints
+    if (config.enableHealthCheck && setupHealthEndpoints && healthPluginInstance) {
       setupHealthEndpoints(devServer, healthPluginInstance);
+    }
 
-      return middlewares;
-    };
-  }
+    return middlewares;
+  };
 
   return devServerConfig;
 };

@@ -78,7 +78,7 @@ const Experience = ({ setActiveSection }) => {
               <span className="eq-bar"></span>
               <span className="eq-bar"></span>
             </span>
-            Where I&apos;ve turned data into decisions &mdash; the analyst&apos;s tracklist
+            Where I&apos;ve shipped AI systems &mdash; internships, clubs, and client work
           </p>
         </motion.div>
 

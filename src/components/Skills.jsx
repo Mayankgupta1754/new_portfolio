@@ -5,7 +5,7 @@ import { Card } from './ui/card';
 import {
   ArrowLeft, Code2, Wrench, Users, Brain, Database, Cpu, Shield, Sparkles,
   Lightbulb, MessageSquare, Briefcase, Search, GraduationCap, Crown,
-  BarChart3, LineChart, PieChart, FileSpreadsheet, Server, Activity, Presentation
+  BarChart3, LineChart, PieChart, FileSpreadsheet, Server, Activity, Presentation, Bot, Network
 } from 'lucide-react';
 import { skillsData } from '../data/mock';
 import { Button } from './ui/button';
@@ -125,14 +125,19 @@ const Skills = ({ setActiveSection }) => {
 
   // Map skill name -> icon + color
   const skillMeta = {
-    'Data Analytics': { icon: BarChart3, color: 'from-spotify-green to-emerald-500' },
+    'Python': { icon: Code2, color: 'from-blue-500 to-cyan-500' },
+    'Generative AI': { icon: Sparkles, color: 'from-pink-500 to-rose-500' },
+    'Agentic AI': { icon: Bot, color: 'from-emerald-500 to-teal-500' },
+    'LLM Engineering': { icon: Cpu, color: 'from-violet-500 to-purple-500' },
+    'Machine Learning': { icon: Brain, color: 'from-violet-500 to-purple-500' },
+    'RAG': { icon: Network, color: 'from-indigo-500 to-blue-500' },
     'SQL': { icon: Server, color: 'from-indigo-500 to-blue-500' },
+    'Data Analysis': { icon: BarChart3, color: 'from-spotify-green to-emerald-500' },
+    'Data Analytics': { icon: BarChart3, color: 'from-spotify-green to-emerald-500' },
     'Power BI': { icon: PieChart, color: 'from-yellow-500 to-orange-500' },
     'Tableau': { icon: LineChart, color: 'from-blue-500 to-cyan-500' },
     'Excel': { icon: FileSpreadsheet, color: 'from-green-500 to-emerald-600' },
-    'Python': { icon: Code2, color: 'from-blue-500 to-cyan-500' },
     'Statistical Analysis': { icon: Activity, color: 'from-purple-500 to-pink-500' },
-    'Machine Learning': { icon: Brain, color: 'from-violet-500 to-purple-500' },
     'Java': { icon: Code2, color: 'from-orange-500 to-red-500' },
     'Data Science': { icon: Database, color: 'from-green-500 to-emerald-500' },
     'Deep Learning': { icon: Cpu, color: 'from-violet-500 to-purple-500' },
@@ -149,17 +154,18 @@ const Skills = ({ setActiveSection }) => {
     'Team Leadership': { icon: Crown, color: 'from-purple-500 to-pink-500', desc: 'Leading teams toward shared goals' },
     'Project Management': { icon: Briefcase, color: 'from-green-500 to-emerald-500', desc: 'Planning, executing, delivering on time' },
     'Research': { icon: Search, color: 'from-indigo-500 to-purple-500', desc: 'Deep diving into the unknown' },
-    'Mentoring': { icon: GraduationCap, color: 'from-pink-500 to-rose-500', desc: 'Helping others grow into confident analysts' }
+    'Mentoring': { icon: GraduationCap, color: 'from-pink-500 to-rose-500', desc: 'Helping others grow into confident AI builders' }
   };
 
-  // Categorize tools — analyst-first ordering
   const toolCategories = {
-    'BI & Visualization': ['Power BI', 'Tableau', 'Excel', 'DAX', 'Power Query', 'Matplotlib', 'Seaborn', 'Plotly', 'Dashboarding', 'Data Storytelling'],
-    'Databases': ['SQL'],
-    'Analysis': ['Pandas', 'NumPy', 'Data Cleaning', 'Data Visualization', 'EDA', 'Feature Engineering', 'Statistical Analysis', 'Hypothesis Testing', 'A/B Testing', 'KPI Reporting'],
-    'Languages': ['Python', 'Java'],
-    'ML / Modeling': ['Scikit-learn', 'TensorFlow', 'Keras', 'Model Evaluation', 'Cross-Validation', 'Hyperparameter Tuning'],
-    'Tools': ['Git', 'GitHub', 'Jupyter Notebook', 'Google Colab', 'VS Code', 'Kaggle']
+    'Languages': ['Python', 'Java', 'SQL'],
+    'Generative AI': ['Generative AI', 'LLMs', 'Prompt Engineering', 'Transformers', 'Hugging Face', 'OpenAI APIs', 'Multimodal AI', 'Function Calling', 'Structured Outputs'],
+    'LLM Engineering': ['RAG', 'Vector Embeddings', 'Vector Databases', 'Fine-Tuning', 'QLoRA', 'LLM Evaluation', 'Model Selection'],
+    'Agentic AI': ['AI Agents', 'Multi-Agent Systems', 'OpenAI Agents SDK', 'LangChain', 'LangGraph', 'CrewAI', 'AutoGen', 'MCP'],
+    'ML / Modeling': ['Machine Learning', 'Scikit-learn', 'TensorFlow', 'OpenCV', 'Feature Engineering', 'Model Evaluation', 'Cross-Validation', 'Hyperparameter Tuning'],
+    'Data Analysis': ['Pandas', 'NumPy', 'EDA', 'Statistical Analysis', 'Hypothesis Testing', 'Power BI', 'DAX', 'Power Query', 'Excel', 'Matplotlib', 'Seaborn', 'Plotly'],
+    'Databases': ['MySQL', 'SQL Server', 'Snowflake'],
+    'Cloud & Tools': ['AWS S3', 'Docker', 'Git', 'GitHub', 'Jupyter Notebook', 'Google Colab', 'VS Code', 'Gradio']
   };
 
   const categoryFilters = ['All', ...Object.keys(toolCategories)];
@@ -236,7 +242,7 @@ const Skills = ({ setActiveSection }) => {
               <span className="eq-bar"></span>
               <span className="eq-bar"></span>
             </span>
-            My analyst toolkit &mdash; tools, tech, and traits
+            My AI engineering toolkit &mdash; models, agents, and the stack behind them
           </p>
         </motion.div>
 

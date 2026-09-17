@@ -107,7 +107,7 @@ const Sidebar = ({ activeSection, setActiveSection, isMobileMenuOpen, setIsMobil
                 className="w-1.5 h-1.5 rounded-full bg-spotify-green"
                 style={{ boxShadow: '0 0 8px rgba(29,185,84,0.8)' }}
               />
-              Open to Data Analyst Roles
+              Open to AI Engineer Roles
             </div>
           </motion.div>
           <div className="flex justify-center">

@@ -145,10 +145,10 @@ const Contact = ({ setActiveSection }) => {
               <span className="eq-bar"></span>
               <span className="eq-bar"></span>
             </span>
-            Let's connect and turn data into decisions together
+            Let's connect and build agentic AI products together
           </p>
 
-          {/* Open-to-work data analyst banner */}
+          {/* Open-to-work AI engineer banner */}
           <motion.div
             initial={{ opacity: 0, y: 12, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -165,7 +165,7 @@ const Contact = ({ setActiveSection }) => {
               <span className="relative w-2.5 h-2.5 rounded-full bg-spotify-green" style={{ boxShadow: '0 0 12px rgba(29,185,84,0.9)' }} />
             </motion.span>
             <span className="text-spotify-green font-bold text-sm uppercase tracking-wider">
-              Actively seeking Data Analyst roles
+              Actively seeking AI Engineer roles
             </span>
             <span className="hidden sm:inline text-gray-300 text-sm">
               · Internship & Full-time · Available Immediately

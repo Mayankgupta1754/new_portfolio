@@ -27,7 +27,8 @@ const Projects = ({ setActiveSection }) => {
       'Cyber Security': 'from-red-500 to-pink-500',
       'Data Analytics': 'from-purple-500 to-violet-500',
       'AI + IoT': 'from-green-500 to-emerald-500',
-      'AI + IoT + Web': 'from-yellow-500 to-orange-500'
+      'AI + IoT + Web': 'from-yellow-500 to-orange-500',
+      'Agentic AI': 'from-emerald-500 to-teal-500'
     };
     return colors[category] || 'from-gray-500 to-gray-700';
   };
@@ -39,7 +40,8 @@ const Projects = ({ setActiveSection }) => {
       'Cyber Security': 'rgba(239, 68, 68, 0.4)',
       'Data Analytics': 'rgba(168, 85, 247, 0.4)',
       'AI + IoT': 'rgba(34, 197, 94, 0.4)',
-      'AI + IoT + Web': 'rgba(234, 179, 8, 0.4)'
+      'AI + IoT + Web': 'rgba(234, 179, 8, 0.4)',
+      'Agentic AI': 'rgba(16, 185, 129, 0.45)'
     };
     return glows[category] || 'rgba(29, 185, 84, 0.4)';
   };
@@ -112,7 +114,7 @@ const Projects = ({ setActiveSection }) => {
               <span className="eq-bar"></span>
               <span className="eq-bar"></span>
             </span>
-            Dashboards, data stories &amp; ML builds &mdash; the analyst&apos;s playlist
+            Agents, LLMs &amp; applied ML &mdash; the AI engineer&apos;s playlist
           </p>
         </motion.div>
 

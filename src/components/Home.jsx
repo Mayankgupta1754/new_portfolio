@@ -10,10 +10,10 @@ const Home = ({ setActiveSection }) => {
   const [subtitleIndex, setSubtitleIndex] = useState(0);
 
   const subtitles = [
-    'Turning data into decisions',
-    'Dashboards, SQL & stories',
-    'From raw rows to real insight',
-    'Press play to explore the analytics'
+    'Building agents, RAG systems, and LLM products',
+    'LangGraph, CrewAI & OpenAI Agents SDK',
+    'From prompts to production pipelines',
+    'Press play to explore the AI work'
   ];
 
   useEffect(() => {
@@ -48,15 +48,15 @@ const Home = ({ setActiveSection }) => {
   const quickAccessCards = [
     {
       id: 'projects',
-      title: 'Dashboards & Projects',
-      description: 'Power BI, Python & SQL work',
+      title: 'Agents & Projects',
+      description: 'LLMs, RAG & multi-agent systems',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=300&fit=crop',
       color: 'from-blue-500 to-cyan-600'
     },
     {
       id: 'skills',
       title: 'Skills',
-      description: 'SQL, BI tools & analytics',
+      description: 'LLMs, agents, ML & Python',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=300&fit=crop',
       color: 'from-green-500 to-emerald-600'
     },
@@ -77,7 +77,7 @@ const Home = ({ setActiveSection }) => {
     {
       id: 'about',
       title: 'About Me',
-      description: 'Story behind the analyst',
+      description: 'Story behind the AI engineer',
       image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=300&fit=crop',
       color: 'from-indigo-500 to-purple-600'
     },
@@ -91,7 +91,7 @@ const Home = ({ setActiveSection }) => {
     {
       id: 'contact',
       title: "Let's Talk",
-      description: 'Open to data analyst roles',
+      description: 'Open to AI engineer roles',
       image: 'https://images.unsplash.com/photo-1516387938699-a93567ec168e?w=300&h=300&fit=crop',
       color: 'from-teal-500 to-cyan-600'
     }

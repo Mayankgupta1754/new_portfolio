@@ -1,7 +1,7 @@
 export const profileData = {
   name: 'Mayank Gupta',
-  title: 'Data Analyst | Turning data into decisions.',
-  tagline: 'A curated space showcasing the dashboards, insights, and stories I bring to life from raw data.',
+  title: 'AI Engineer | Building agents, RAG systems, and LLM products.',
+  tagline: 'A curated space for agentic AI, LLM engineering, and applied machine learning — with a strong analytics foundation.',
   profileImage: 'https://customer-assets.emergentagent.com/job_6e45107b-7f1c-49cf-95db-7b815b8d2de1/artifacts/6hw1f7ll_1736653887401.jpg',
   email: 'themayankgupta17@gmail.com',
   social: {
@@ -13,26 +13,56 @@ export const profileData = {
 };
 
 export const aboutData = {
-  bio: 'B.Tech Computer Science student at VIT Vellore specializing in Data Analytics and Business Intelligence. I transform raw, messy data into clear, actionable insights through SQL, Python, Power BI, and Tableau — combining strong statistical fundamentals, EDA, and storytelling to drive better decisions. I also bring a working foundation in Machine Learning and AI, allowing me to push analytics beyond reporting into prediction and automation when needed.',
+  bio: 'Computer Science and Engineering graduate from VIT Vellore with hands-on experience in Python, Data Science, Machine Learning, Generative AI, LLMs, and Agentic AI. I have built end-to-end AI projects involving LLM applications, RAG, AI agents, data processing, and automation, with a strong foundation in developing and deploying practical AI solutions.',
   highlights: [
-    'Built 25+ data analytics and ML projects on real-world datasets',
-    'Strong in SQL, Python, Power BI, Tableau, and Excel for end-to-end analysis',
-    'Hands-on with EDA, feature engineering, statistical analysis, and KPI dashboards',
-    'Skilled at translating business questions into measurable, data-backed answers',
-    'Mentored 250+ students through workshops on analytics and data storytelling'
+    'Built multi-LLM, multi-agent, and RAG-style products spanning orchestration, evaluation, and deployment',
+    'Hands-on with LangChain, LangGraph, CrewAI, OpenAI Agents SDK, Hugging Face, and OpenAI APIs',
+    'Strong in Python, SQL, machine learning, and end-to-end data analysis when models need grounded inputs',
+    'Shipped agent workflows for deliberation, product discovery, and natural-language analytics',
+    'Mentored 250+ students through workshops on AI, ML, and Git as Technical Head of TAM-VIT'
   ],
   interests: [
-    'Data Analytics',
-    'Business Intelligence',
-    'Data Visualization',
-    'SQL & Databases',
-    'Statistical Analysis',
+    'Generative AI',
+    'LLM Engineering',
+    'Agentic AI',
+    'RAG & Vector Search',
     'Machine Learning',
-    'Data Storytelling'
+    'Multimodal AI',
+    'Data Analysis'
   ]
 };
 
 export const projectsData = [
+  {
+    id: 10,
+    title: 'The AI Group Chat — Multi-LLM Deliberation System',
+    description: 'A multi-model orchestration pipeline that runs GPT, Claude, Gemini, and DeepSeek concurrently through OpenRouter, then uses an independent judge LLM to solve problems, evaluate heterogeneous outputs, and decide the final answer with consensus as supporting evidence rather than majority voting. Includes image-to-text transcription, batch question decomposition, LaTeX rendering, Answer/Solve modes, and production deployment on Vercel.',
+    technologies: ['Python', 'OpenRouter', 'AsyncIO', 'LLMs', 'OpenAI Agents SDK'],
+    category: 'Agentic AI',
+    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop',
+    link: 'https://github.com/Mayankgupta1754/theaigroupchat',
+    github: 'https://github.com/Mayankgupta1754/theaigroupchat'
+  },
+  {
+    id: 11,
+    title: 'Shoppiomart Product Finder — Multi-Agent Product Discovery',
+    description: 'A CrewAI multi-agent pipeline that finds live products from Google Shopping India and writes store-ready listing content. A sequential Scout → Writer → Dispatcher workflow uses Serper so agents cannot invent products, prices, or URLs, then generates descriptions, price bands, target audience, and Pushover mobile notifications.',
+    technologies: ['Python', 'CrewAI', 'Serper', 'OpenAI', 'Pushover'],
+    category: 'Agentic AI',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
+    link: 'https://github.com/Mayankgupta1754/shoppiomart_recommender',
+    github: 'https://github.com/Mayankgupta1754/shoppiomart_recommender'
+  },
+  {
+    id: 12,
+    title: 'Data Analyst Agent',
+    description: 'A LangGraph multi-agent analyst that lets users upload CSVs and run natural-language data analysis. A worker–evaluator loop automates EDA, correlation, outlier, and trend work, then produces charts, HTML reports, and downloadable Jupyter notebooks inside a session-based sandbox with a Gradio interface.',
+    technologies: ['Python', 'LangGraph', 'LangChain', 'Gradio', 'Pandas'],
+    category: 'Agentic AI',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    link: 'https://github.com/Mayankgupta1754/personal_data_analyst',
+    github: 'https://github.com/Mayankgupta1754/personal_data_analyst'
+  },
   {
     id: 1,
     title: 'Retail Sales Analytics Dashboard',
@@ -128,51 +158,74 @@ export const projectsData = [
 
 export const skillsData = {
   technical: [
-    { name: 'Data Analytics', level: 92 },
-    { name: 'SQL', level: 88 },
-    { name: 'Power BI', level: 88 },
-    { name: 'Tableau', level: 82 },
-    { name: 'Excel', level: 90 },
-    { name: 'Python', level: 90 },
-    { name: 'Statistical Analysis', level: 80 },
-    { name: 'Machine Learning', level: 82 }
+    { name: 'Python', level: 92 },
+    { name: 'Generative AI', level: 90 },
+    { name: 'Agentic AI', level: 88 },
+    { name: 'LLM Engineering', level: 88 },
+    { name: 'Machine Learning', level: 86 },
+    { name: 'RAG', level: 85 },
+    { name: 'SQL', level: 85 },
+    { name: 'Data Analysis', level: 84 }
   ],
     tools: [
-  'SQL',
-  'Power BI',
-  'Tableau',
-  'Excel',
   'Python',
-  'Pandas',
-  'NumPy',
-  'Data Cleaning',
-  'Data Visualization',
-  'EDA',
-  'Statistical Analysis',
-  'Hypothesis Testing',
-  'Feature Engineering',
-  'DAX',
-  'Power Query',
-  'Matplotlib',
-  'Seaborn',
-  'Plotly',
+  'Java',
+  'SQL',
+  'Machine Learning',
   'Scikit-learn',
+  'TensorFlow',
+  'OpenCV',
+  'Feature Engineering',
   'Model Evaluation',
   'Cross-Validation',
   'Hyperparameter Tuning',
-  'A/B Testing',
-  'KPI Reporting',
-  'Dashboarding',
-  'Data Storytelling',
+  'Generative AI',
+  'LLMs',
+  'Prompt Engineering',
+  'Transformers',
+  'Hugging Face',
+  'OpenAI APIs',
+  'Multimodal AI',
+  'Function Calling',
+  'Structured Outputs',
+  'RAG',
+  'Vector Embeddings',
+  'Vector Databases',
+  'Fine-Tuning',
+  'QLoRA',
+  'LLM Evaluation',
+  'Model Selection',
+  'AI Agents',
+  'Multi-Agent Systems',
+  'OpenAI Agents SDK',
+  'LangChain',
+  'LangGraph',
+  'CrewAI',
+  'AutoGen',
+  'MCP',
+  'Pandas',
+  'NumPy',
+  'EDA',
+  'Statistical Analysis',
+  'Hypothesis Testing',
+  'Power BI',
+  'DAX',
+  'Power Query',
+  'Excel',
+  'Matplotlib',
+  'Seaborn',
+  'Plotly',
+  'MySQL',
+  'SQL Server',
+  'Snowflake',
+  'AWS S3',
+  'Docker',
+  'Git',
+  'GitHub',
   'Jupyter Notebook',
   'Google Colab',
   'VS Code',
-  'Git',
-  'GitHub',
-  'Kaggle',
-  'Java',
-  'TensorFlow',
-  'Keras'
+  'Gradio'
 ],
 
   softSkills: [
@@ -329,6 +382,16 @@ export const blogData = [
 
 export const certificatesData = [
   {
+    id: 0,
+    title: 'Microsoft Certified: Azure AI Fundamentals',
+    issuer: 'Microsoft',
+    description: 'Foundational certification covering Azure AI services, machine learning concepts, computer vision, NLP, and generative AI on Azure.',
+    date: '2025',
+    credentialId: 'AI-900',
+    link: 'https://drive.google.com/file/d/180F_PdJ6D-7iVekVSZ1ex_ig4AJPz1Mz/view?usp=sharing',
+    skills: ['Azure AI', 'Generative AI', 'Machine Learning', 'NLP', 'Computer Vision']
+  },
+  {
     id: 1,
     title: 'Machine Learning Specialization',
     issuer: 'Coursera',
@@ -366,6 +429,36 @@ export const contactData = {
 export const knowledgeData = [
   {
     id: 1,
+    title: 'The AI Group Chat — Multi-LLM Deliberation',
+    description: 'Concurrent multi-model orchestration with an independent judge LLM for adjudication, plus multimodal question processing.',
+    technologies: ['Python', 'OpenRouter', 'AsyncIO', 'LLMs', 'OpenAI Agents SDK'],
+    category: 'Agentic AI',
+    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop',
+    link: 'https://github.com/Mayankgupta1754/theaigroupchat',
+    github: 'https://github.com/Mayankgupta1754/theaigroupchat'
+  },
+  {
+    id: 2,
+    title: 'Shoppiomart Product Finder',
+    description: 'CrewAI sequential agents for grounded Google Shopping discovery and catalog generation with Serper and Pushover.',
+    technologies: ['Python', 'CrewAI', 'Serper', 'OpenAI', 'Pushover'],
+    category: 'Agentic AI',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop',
+    link: 'https://github.com/Mayankgupta1754/shoppiomart_recommender',
+    github: 'https://github.com/Mayankgupta1754/shoppiomart_recommender'
+  },
+  {
+    id: 3,
+    title: 'Data Analyst Agent',
+    description: 'LangGraph worker–evaluator loop for natural-language CSV analysis, charts, HTML reports, and Jupyter notebooks.',
+    technologies: ['Python', 'LangGraph', 'LangChain', 'Gradio', 'Pandas'],
+    category: 'Agentic AI',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop',
+    link: 'https://github.com/Mayankgupta1754/personal_data_analyst',
+    github: 'https://github.com/Mayankgupta1754/personal_data_analyst'
+  },
+  {
+    id: 5,
     title: 'CamJett – Smart Face Recognition Door Lock',
     description: 'An intelligent security system combining face recognition, RFID authentication, and access logging with a web-based admin dashboard.',
     technologies: ['Python', 'OpenCV', 'Flask', 'Raspberry Pi', 'Arduino', 'IoT'],
@@ -375,7 +468,7 @@ export const knowledgeData = [
     github: '#'
   },
   {
-    id: 2,
+    id: 6,
     title: 'Smart Firefighting Robot',
     description: 'Autonomous robot capable of detecting and extinguishing fire using sensors, computer vision, and real-time motor control.',
     technologies: ['Python', 'OpenCV', 'Arduino', 'Raspberry Pi', 'Embedded Systems'],
@@ -385,7 +478,7 @@ export const knowledgeData = [
     github: '#'
   },
   {
-    id: 3,
+    id: 7,
     title: 'Machine Learning Analytics Projects',
     description: 'A collection of end-to-end ML projects covering regression, classification, clustering, and real-world dataset analysis.',
     technologies: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib'],
@@ -395,7 +488,7 @@ export const knowledgeData = [
     github: '#'
   },
   {
-    id: 4,
+    id: 8,
     title: 'Ethical Hacking & Network Security Labs',
     description: 'Hands-on labs focusing on network analysis, system vulnerabilities, and ethical hacking fundamentals.',
     technologies: ['Linux', 'Networking', 'Security Tools', 'Python'],

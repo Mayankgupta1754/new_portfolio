@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from './ui/card';
-import { ArrowLeft, Award, Calendar } from 'lucide-react';
+import { ArrowLeft, Award, Calendar, ExternalLink } from 'lucide-react';
 import { certificatesData } from '../data/mock';
 import { Button } from './ui/button';
 
@@ -43,10 +43,23 @@ const Certificates = ({ setActiveSection }) => {
                     <Calendar size={16} />
                     <span>{cert.date}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Award size={16} />
-                    <span>{cert.credentialId}</span>
-                  </div>
+                  {cert.credentialId && (
+                    <div className="flex items-center gap-2">
+                      <Award size={16} />
+                      <span>{cert.credentialId}</span>
+                    </div>
+                  )}
+                  {cert.link && (
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-spotify-green hover:underline"
+                    >
+                      <ExternalLink size={16} />
+                      <span>View credential</span>
+                    </a>
+                  )}
                 </div>
 
                 <div className="mt-4">

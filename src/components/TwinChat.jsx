@@ -17,7 +17,7 @@ const TwinChat = ({ seedQuestion, seedKey, onSeedConsumed }) => {
     {
       role: "assistant",
       content:
-        "Hey — I'm Mayank's digital twin. Ask about my analytics work, internships, Power BI dashboards, or whether I'd be a fit for a data analyst role.",
+        "Hey — I'm Mayank's digital twin. Ask about my AI engineering work, agent systems, LLM projects, internships, or whether I'd be a fit for an AI engineer role.",
     },
   ]);
   const [input, setInput] = useState("");
@@ -131,7 +131,7 @@ const TwinChat = ({ seedQuestion, seedKey, onSeedConsumed }) => {
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Ask about skills, internships, dashboards…"
+          placeholder="Ask about agents, LLMs, internships…"
           className="flex-1 h-12 rounded-full bg-[#282828] border border-white/10 px-5 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-spotify-green"
         />
         <button

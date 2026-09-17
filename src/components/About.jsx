@@ -5,7 +5,7 @@ import { Card } from './ui/card';
 import {
   ArrowLeft, Sparkles, Target, Heart, MapPin, GraduationCap,
   Code2, Trophy, Users, Brain, Database, Shield, Cpu, Layers, Zap, Rocket, Presentation,
-  BarChart3, LineChart, PieChart, Activity, FileSpreadsheet, Server
+  BarChart3, LineChart, PieChart, Activity, FileSpreadsheet, Server, Bot, Network
 } from 'lucide-react';
 import { aboutData, profileData } from '../data/mock';
 import { Button } from './ui/button';
@@ -43,20 +43,20 @@ const About = ({ setActiveSection }) => {
   const [hoveredInterest, setHoveredInterest] = useState(null);
 
   const stats = [
-    { label: 'Dashboards & Analyses', value: 25, suffix: '+', icon: BarChart3, color: 'from-blue-500 to-cyan-500' },
+    { label: 'AI Systems Shipped', value: 25, suffix: '+', icon: Bot, color: 'from-blue-500 to-cyan-500' },
     { label: 'Students Mentored', value: 250, suffix: '+', icon: Users, color: 'from-purple-500 to-pink-500' },
     { label: 'Workshops Led', value: 3, suffix: '+', icon: Presentation, color: 'from-yellow-500 to-orange-500' },
     { label: 'Certifications', value: 5, suffix: '+', icon: Sparkles, color: 'from-green-500 to-emerald-500' }
   ];
 
   const interestIcons = {
-    'Data Analytics': BarChart3,
-    'Business Intelligence': PieChart,
-    'Data Visualization': LineChart,
-    'SQL & Databases': Server,
-    'Statistical Analysis': Activity,
+    'Generative AI': Sparkles,
+    'LLM Engineering': Cpu,
+    'Agentic AI': Bot,
+    'RAG & Vector Search': Network,
     'Machine Learning': Brain,
-    'Data Storytelling': FileSpreadsheet
+    'Multimodal AI': Layers,
+    'Data Analysis': BarChart3
   };
 
   const containerVariants = {
@@ -171,8 +171,8 @@ const About = ({ setActiveSection }) => {
             </p>
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-gray-400 text-sm">
               <span className="flex items-center gap-1.5">
-                <BarChart3 size={16} className="text-spotify-green" />
-                Aspiring Data Analyst
+                <Bot size={16} className="text-spotify-green" />
+                AI Engineer
               </span>
               <span className="flex items-center gap-1.5">
                 <GraduationCap size={16} className="text-spotify-green" />
@@ -382,10 +382,10 @@ const About = ({ setActiveSection }) => {
             </div>
             <div className="relative">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">
-                Need an analyst who can ship insights?
+                Need an AI engineer who can ship agents?
               </h3>
               <p className="text-gray-300 mb-6 max-w-xl mx-auto">
-                I&apos;m actively seeking Data Analyst opportunities &mdash; let&apos;s turn your data into decisions.
+                I&apos;m actively seeking AI Engineer roles &mdash; let&apos;s build LLM products that actually work.
               </p>
               <div className="flex flex-wrap justify-center gap-3">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -394,7 +394,7 @@ const About = ({ setActiveSection }) => {
                     className="bg-spotify-green hover:bg-spotify-green-dark text-black font-semibold px-6 py-3 rounded-full shadow-lg shadow-spotify-green/30"
                   >
                     <Rocket size={18} className="mr-2" />
-                    See My Dashboards
+                    See My Projects
                   </Button>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

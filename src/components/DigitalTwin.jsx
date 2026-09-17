@@ -7,8 +7,8 @@ import { Card } from "./ui/card";
 import { profileData } from "../data/mock";
 
 const SUGGESTIONS = [
-  "What data analyst roles are you targeting?",
-  "Walk me through your Power BI projects",
+  "What AI engineer roles are you targeting?",
+  "Walk me through your agent and LLM projects",
   "Which internships have you completed?",
   "What tools do you use day to day?",
 ];

@@ -9,7 +9,7 @@ export const profileData = {
     linkedin: 'https://www.linkedin.com/in/mayank-gupta-218636253/',
     email: 'mailto:themayankgupta17@gmail.com'
   },
-  resumeUrl: 'https://drive.google.com/file/d/17RK8MXgW-0BzkIkVj3oZUEPt7_AKY-gx/view?usp=sharing'
+  resumeUrl: 'https://drive.google.com/file/d/1LWdMyWcaSYb_sQRuWsQFyAGBa7Z68VhP/view?usp=sharing'
 };
 
 export const aboutData = {

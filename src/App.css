@@ -275,3 +275,19 @@ a:focus-visible {
 @keyframes rotateBorder {
     to { --angle: 360deg; }
 }
+
+elevenlabs-convai {
+    z-index: 70;
+}
+
+body.voice-agent-open .mobile-search-fab {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 1023px) {
+    elevenlabs-convai {
+        --el-widget-offset-bottom: calc(env(safe-area-inset-bottom, 0px) + 12px);
+        --el-widget-offset-right: 12px;
+    }
+}

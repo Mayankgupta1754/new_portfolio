@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, Bot, Sparkles } from "lucide-react";
+import { ArrowLeft, Bot, Sparkles, Mic } from "lucide-react";
 import TwinChat from "./TwinChat";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { profileData } from "../data/mock";
+import { openVoiceAgent } from "./VoiceAgent";
 
 const SUGGESTIONS = [
   "What AI engineer roles are you targeting?",
@@ -102,6 +103,17 @@ const DigitalTwin = ({ setActiveSection, seedQuestion, onSeedConsumed }) => {
             />
           </Card>
         </motion.div>
+
+        <div className="mt-4 mb-8 lg:mb-0 flex justify-stretch lg:justify-end">
+          <button
+            type="button"
+            onClick={openVoiceAgent}
+            className="w-full lg:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-spotify-green text-black text-sm font-semibold px-4 py-3 min-h-12 hover:bg-spotify-green-dark transition-colors shadow-lg shadow-spotify-green/20 touch-manipulation"
+          >
+            <Mic size={16} />
+            Talk with voice
+          </button>
+        </div>
       </div>
     </div>
   );

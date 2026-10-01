@@ -13,6 +13,7 @@ import Blog from "./components/Blog";
 import GitHubStats from "./components/GitHubStats";
 import DigitalTwin from "./components/DigitalTwin";
 import SearchPalette from "./components/SearchPalette";
+import VoiceAgent from "./components/VoiceAgent";
 import { Search } from "lucide-react";
 
 function App() {
@@ -95,7 +96,7 @@ function App() {
         setIsMobileMenuOpen={setIsMobileMenuOpen}
         onOpenSearch={() => setSearchOpen(true)}
       />
-      <main className="lg:ml-72 pt-14 lg:pt-0 transition-all duration-300">
+      <main className="lg:ml-72 pt-14 lg:pt-0 pb-24 lg:pb-0 transition-all duration-300">
         {renderSection()}
       </main>
       <SearchPalette
@@ -104,13 +105,14 @@ function App() {
         onNavigate={handleSetActiveSection}
         onAskTwin={askTwin}
       />
+      <VoiceAgent />
       <button
         type="button"
         onClick={() => setSearchOpen(true)}
-        className="lg:hidden fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-spotify-green text-black shadow-lg shadow-spotify-green/30 flex items-center justify-center"
+        className="mobile-search-fab lg:hidden fixed bottom-[max(1.25rem,calc(env(safe-area-inset-bottom)+0.75rem))] right-[4.75rem] z-50 w-12 h-12 rounded-full bg-[#181818] text-spotify-green border border-spotify-green/40 shadow-lg flex items-center justify-center touch-manipulation"
         aria-label="Search or ask the digital twin"
       >
-        <Search size={22} />
+        <Search size={20} />
       </button>
     </div>
   );
